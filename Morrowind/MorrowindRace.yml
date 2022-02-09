@@ -1,0 +1,357 @@
+Argonian:
+  Male:
+    Attributes:
+      Strength: 40
+      Intelligence: 40
+      Willpower: 30
+      Agility: 50
+      Speed: 50
+      Endurance: 30
+      Personality: 30
+      Luck: 40
+    Height: 1.03
+    Weight: 1.1
+  Female:
+    Attributes:
+      Strength: 40
+      Intelligence: 50
+      Willpower: 40
+      Agility: 40
+      Speed: 40
+      Endurance: 30
+      Personality: 30
+      Luck: 40
+    Height: 1.0
+    Weight: 1.0
+  Magicka Multiplier Bonus: 0
+  Skills:
+    Alchemy: 5
+    Athletics: 15
+    Illusion: 5
+    Medium Armour: 5
+    Mysticism: 5
+    Spear: 5
+    Unarmoured: 5
+  Resists:
+    Poison: 100
+    Common Disease: 75
+Breton:
+  Male:
+    Attributes:
+      Strength: 40
+      Intelligence: 50
+      Willpower: 50
+      Agility: 30
+      Speed: 30
+      Endurance: 30
+      Personality: 40
+      Luck: 40
+    Height: 1.0
+    Weight: 1.0
+  Female:
+    Attributes:
+      Strength: 30
+      Intelligence: 50
+      Willpower: 50
+      Agility: 30
+      Speed: 40
+      Endurance: 30
+      Personality: 40
+      Luck: 40
+    Height: 0.95
+    Weight: 0.9
+  Magicka Multiplier Bonus: 0.5
+  Skills:
+    Alchemy: 5
+    Alteration: 5
+    Conjuration: 10
+    Illusion: 5
+    Mysticism: 10
+    Restoration: 10
+  Resists:
+    Magicka: 50
+DarkElf:
+  Male:
+    Attributes:
+      Strength: 40
+      Intelligence: 40
+      Willpower: 30
+      Agility: 40
+      Speed: 50
+      Endurance: 40
+      Personality: 30
+      Luck: 40
+    Height: 1.0
+    Weight: 1.0
+  Female:
+    Attributes:
+      Strength: 40
+      Intelligence: 40
+      Willpower: 30
+      Agility: 40
+      Speed: 50
+      Endurance: 30
+      Personality: 40
+      Luck: 40
+    Height: 1.0
+    Weight: 0.9
+  Magicka Multiplier Bonus: 0
+  Skills:
+    Athletics: 5
+    Destruction: 10
+    Light Armour: 5
+    Long Blade: 5
+    Marksman: 5
+    Mysticism: 5
+    Short Blade: 10
+  Resists:
+    Fire: 50
+HighElf:
+  Male:
+    Attributes:
+      Strength: 30
+      Intelligence: 50
+      Willpower: 40
+      Agility: 40
+      Speed: 30
+      Endurance 40:
+      Personality: 40
+      Luck: 40
+    Height: 1.1
+    Weight: 1.0
+  Female:
+    Attributes:
+      Strength: 30
+      Intelligence: 50
+      Willpower: 40
+      Agility: 40
+      Speed: 40
+      Endurance: 30
+      Personality: 40
+      Luck: 40
+    Height: 1.1
+    Weight: 1.0
+  Magicka Multiplier Bonus: 1.5
+  Skills:
+    Alchemy: 10
+    Alteration: 5
+    Conjuration: 5
+    Destruction: 10
+    Enchant: 10
+    Illusion: 5
+  Resists:
+    Magicka: -50
+    Fire: -50
+    Frost: -25
+    Shock: -25
+    Common Disease: 75
+Imperial:
+  Male:
+    Attributes:
+      Strength: 40
+      Intelligence: 40
+      Willpower: 30
+      Agility: 30
+      Speed: 40
+      Endurance: 40
+      Personality: 50
+      Luck: 40
+    Height: 1.0
+    Weight: 1.25
+  Female:
+    Attributes:
+      Strength: 40
+      Intelligence: 40
+      Willpower: 40
+      Agility: 30
+      Speed: 30
+      Endurance: 40
+      Personality: 50
+      Luck: 40
+    Height: 1.0
+    Weight: 0.95
+  Magicka Multiplier Bonus: 0
+  Skills:
+    Blunt Weapon: 5
+    Hand to Hand: 5
+    Light Armour: 5
+    Long Blade: 10
+    Merchantile: 10
+    Speechcraft: 10
+  Resists: no
+Khajiit:
+  Male:
+    Attributes:
+      Strength: 40
+      Intelligence: 40
+      Willpower: 30
+      Agility: 50
+      Speed: 40
+      Endurance: 30
+      Personality: 40
+      Luck: 40
+    Height: 1.0
+    Weight: 1.0
+  Female:
+    Attributes:
+      Strength: 30
+      Intelligence: 40
+      Willpower: 30
+      Agility: 50
+      Speed: 40
+      Endurance: 40
+      Personality: 40
+      Luck: 40
+    Height: 0.95
+    Weight: 0.95
+  Magicka Multiplier Bonus: 0
+  Skills:
+    Acrobatics: 15
+    Athletics: 5
+    Hand to Hand: 5
+    Light Armour: 5
+    Security: 5
+    Short Blade: 5
+    Sneak: 5
+  Resists: no
+Nord:
+  Male:
+    Attributes:
+      Strength: 50
+      Intelligence: 30
+      Willpower: 40
+      Agility: 30
+      Speed: 40
+      Endurance: 50
+      Personality: 30
+      Luck: 40
+    Height: 1.06
+    Weight: 1.25
+  Female:
+    Attributes:
+      Strength: 50
+      Intelligence: 30
+      Willpower: 50
+      Agility: 30
+      Speed: 40
+      Endurance: 40
+      Personality: 30
+      Luck: 40
+    Height: 1.06
+    Weight: 1.0
+  Magicka Multiplier Bonus: 0
+  Skills:
+    Axe: 10
+    Blunt Weapon: 10
+    Heavy Armour: 5
+    Long Blade: 5
+    Medium Armour: 10
+    Spear: 5
+  Resists:
+    Forst: 100
+    Shock: 50
+Orc:
+  Male:
+    Attributes:
+      Strength: 45
+      Intelligence: 30
+      Willpower: 50
+      Agility: 35
+      Speed: 30
+      Endurance: 50
+      Personality: 30
+      Luck: 40
+    Height: 1.05
+    Weight: 1.35
+  Female:
+    Attributes:
+      Strength: 45
+      Intelligence: 40
+      Willpower: 45
+      Agility: 35
+      Speed: 30
+      Endurance: 50
+      Personality: 25
+      Luck: 40
+    Height: 1.05
+    Weight: 1.1
+  Magicka Multiplier Bonus: 0
+  Skills:
+    Armourer: 10
+    Axe: 5
+    Block: 10
+    Heavy Armour: 10
+    Medium Armour: 10
+  Resists:
+    Magicka: 25
+Redguard:
+  Male:
+    Attributes:
+      Strength: 50
+      Intelligence: 30
+      Willpower: 30
+      Agility: 40
+      Speed: 40
+      Endurance: 50
+      Personality: 30
+      Luck: 40
+    Height: 1.02
+    Weight: 1.1
+  Female:
+    Attributes:
+      Strength: 40
+      Intelligence: 30
+      Willpower: 30
+      Agility: 40
+      Speed: 40
+      Endurance: 50
+      Personality: 40
+      Luck: 40
+    Height: 1.0
+    Weight: 1.0
+  Magicka Multiplier Bonus: 0
+  Skills:
+    Athletics: 5
+    Axe: 5
+    Blunt Weapon: 5
+    Heavy Armour: 5
+    Long Blade: 15
+    Medium Armour: 5
+    Short Blade: 5
+  Resists:
+    Poison: 75
+    Common Disease: 75
+WoodElf:
+  Male:
+    Attributes:
+      Strength: 30
+      Intelligence: 40
+      Willpower: 30
+      Agility: 50
+      Speed: 50
+      Endurance: 30
+      Personality: 40
+      Luck: 40
+    Height: 0.9
+    Weight: 0.95
+  Female:
+    Attributes:
+      Strength: 30
+      Intelligence: 40
+      Willpower: 30
+      Agility: 50
+      Speed: 50
+      Endurance: 30
+      Personality: 40
+      Luck: 40
+    Height: 1.0
+    Weight: 0.9
+  Magicka Multiplier Bonus: 0
+  Skills:
+    Acrobatics: 5
+    Alchemy: 5
+    Light Armour: 10
+    Marksman: 15
+    Sneak: 10
+  Resists:
+    Common Disease: 75
