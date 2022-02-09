@@ -1,8 +1,18 @@
 class MW_Skill:
-    def __init__(self, name, specialisation, mw_attribute):
+    def __init__(self, name, specialisation, mw_attribute, skill_value = 0):
         self.name = name
         self.specialisation = specialisation
         self.mw_attribute = mw_attribute
+        self.skill_value = skill_value
+
+    def __repr__(self):
+        return f"{self.name}: {self.skill_value}"
+
+    def __add__(self, x):
+        return MW_Skill(self.name, self.specialisation, self.mw_attribute, (self.skill_value+x))
+
+    #def __iadd__(self, x):
+    #    return self.__add__(x)
 
 # Endurance Attribute Skills
 c,s,m,x = 'Combat', 'Stealth', 'Magic', 'Endurance'

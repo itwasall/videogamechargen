@@ -1,0 +1,105 @@
+Acrobat:
+  spec: Stealth
+  attr: [Agility, Endurance]
+  major: [Athletics, Acrobatics, Marksman, Sneak, Unarmored]
+  minor: [Spear, Alteration, Hand to Hand, Light Armor, Speechcraft]
+Agent:
+  spec: Stealth
+  attr: [Agility, Personality]
+  major: [Acrobatics, Light Armor, Small Blade, Sneak, Speechcraft]
+  minor: [Block, Conjuration, Illusion, Unarmored, Mercantile]
+Archer:
+  spec: Combat
+  attr: [Agility, Strength]
+  major: [Athletics, Block, Large Blade, Light Armor, Marksman]
+  minor: [Medium Armor, Spear, Restoration, Unarmored, Sneak]
+Assassin:
+  spec: Stealth
+  attr: [Intelligence, Speed]
+  major: [Acrobatics, Light Armor, Marksman, Small Blade, Sneak]
+  minor: [Athletics, Block, Large Blade, Alchemy, Security]
+Barbarian:
+  spec: Combat
+  attr: [Speed, Strength]
+  major: [Athletics, Axe, Block, Blunt Weapon, Medium Armor]
+  minor: [Armorer, Unarmored, Acrobatics, Light Armor, Marksman]
+Bard:
+  spec: Stealth
+  attr: [Intelligence, Personality]
+  major: [Block, Large Blade, Alchemy, Acrobatics, Speechcraft]
+  minor: [Medium Armor, Enchant, Illusion, Mercantile, Security]
+Battlemage:
+  spec: Magic
+  attr: [Intelligence, Strength]
+  major: [Axe, Heavy Armor, Alteration, Conjuration, Destruction]
+  minor: [Large Blade, Alchemy, Enchant, Mysticism, Marksman]
+Crusader:
+  spec: Combat
+  attr: [Agility, Strength]
+  major: [Block, Blunt Weapon, Heavy Armor, Large Blade, Destruction]
+  minor: [Armorer, Medium Armor, Alchemy, Restoration, Hand to Hand]
+Healer:
+  spec: Magic
+  attr: [Personality, Willpower]
+  major: [Alteration, Mysticism, Restoration, Hand to Hand, Speechcraft]
+  minor: [Blunt Weapon, Alchemy, Illusion, Unarmored, Light Armor]
+Knight:
+  spec: Combat
+  attr: [Personality, Strenght]
+  major: [Axe, Block, Heavy Armor, Large Blade, Speechcraft]
+  minor: [Armorer, Medium Armor, Enchant, Restoration, Mercantile]
+Mage:
+  spec: Magic
+  attr: [Intelligence, Willpower]
+  major: [Alteration, Destruction, Illusion, Mysticism, Restoration]
+  minor: [Alchemy, Conjuration, Enchant, Unarmored, Small Blade]
+Monk:
+  spec: Stealth
+  attr: [Agility, Willpower]
+  major: [Athletics, Unarmored, Acrobatics, Hand to Hand, Sneak]
+  minor: [Block, Blunt Weapon, Restoration, Light Armor, Marksman]
+Nightblade:
+  spec: Magic
+  attr: [Speed, Willpower]
+  major: [Alteration, Illusion, Mysticism, Small Blade, Sneak]
+  minor: [Destruction, Unarmored, Light Armor, Marksman, Security]
+Pilgrim:
+  spec: Stealth
+  attr: [Endurance, Personality]
+  major: [Medium Armor, Restoration, Marksman, Mercantile, Speechcraft]
+  minor: [Block, Alchemy, Illusion, Hand to Hand, Small Blade]
+Rogue:
+  spec: Combat
+  attr: [Personality, Speed]
+  major: [Axe, Hand to Hand, Light Armor, Mercantile, Small Blade]
+  minor: [Athletics, Block, Large Blade, Medium Armor, Speechcraft]
+Scout:
+  spec: Combat
+  attr: [Endurance, Speed]
+  major: [Athletics, Block, Large Blade, Medium Armor, Sneak]
+  minor: [Alchemy, Alteration, Unarmored, Light Armor, Marksman]
+Sorcerer:
+  spec: Magic
+  attr: [Endurance, Intelligence]
+  major: [Alteration, Conjuration, Destruction, Enchant, Mysticism]
+  minor: [Heavy Armor, Medium Armor, Illusion, Marksman, Small Blade]
+Spellsword:
+  spec: Magic
+  attr: [Endurance, Willpower]
+  major: [Block, Large Blade, Alteration, Destruction, Restoration]
+  minor: [Axe, Blunt Weapon, Medium Armor, Alchemy, Enchat]
+Theif:
+  spec: Stealth
+  attr: [Agility, Speed]
+  major: [Acrobatics, Light Armor, Security, Small Blade, Sneak]
+  minor: [Athletics, Hand to Hand, Marksman, Mercantile, Speechcraft]
+Warrior:
+  spec: Combat
+  attr: [Endurance, Strength]
+  major: [Athletics, Block, Heavy Armor, Large Blade, Medium Armor]
+  minor: [Armorer, Axe, Blunt Weapon, Spear, Marksman]
+Witchhunter:
+  spec: Magic
+  attr: [Agility, Intelligence]
+  major: [Alchemy, Conjuration, Enchant, Light Armor, Marksman]
+  minor: [Block, Blunt Weapon, Mysticism, Unarmored, Sneak]

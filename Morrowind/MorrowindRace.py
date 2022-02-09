@@ -4,7 +4,7 @@ from yaml import safe_load
 
 race_data = safe_load(open('Morrowind/data/Race.yml', 'rt'))
 
-class Race:
+class MW_Race:
     def __init__(self, race_name, race_data: dict):
         self.name = race_name
         self.male_attributes = race_data['Male']['Attributes']
@@ -20,15 +20,15 @@ class Race:
         else:
             self.resists = None
 
-MWRace_Argonian = Race('Argonian', race_data['Argonian'])
-MWRace_Breton = Race('Breton', race_data['Breton'])
-MWRace_DarkElf = Race('Dark Elf', race_data['DarkElf'])
-MWRace_HighElf = Race('High Elf', race_data['HighElf'])
-MWRace_Imperial = Race('Imperial', race_data['Imperial'])
-MWRace_Khajiit = Race('Khajiit', race_data['Khajiit'])
-MWRace_Nord = Race('Nord', race_data['Nord'])
-MWRace_Orc = Race('Ord', race_data['Orc'])
-MWRace_Redguard = Race('Redguard', race_data['Redguard'])
-MWRace_WoodElf = Race('Wood Elf', race_data['WoodElf'])
+MWRace_Argonian = MW_Race('Argonian', race_data['Argonian'])
+MWRace_Breton = MW_Race('Breton', race_data['Breton'])
+MWRace_DarkElf = MW_Race('Dark Elf', race_data['DarkElf'])
+MWRace_HighElf = MW_Race('High Elf', race_data['HighElf'])
+MWRace_Imperial = MW_Race('Imperial', race_data['Imperial'])
+MWRace_Khajiit = MW_Race('Khajiit', race_data['Khajiit'])
+MWRace_Nord = MW_Race('Nord', race_data['Nord'])
+MWRace_Orc = MW_Race('Ord', race_data['Orc'])
+MWRace_Redguard = MW_Race('Redguard', race_data['Redguard'])
+MWRace_WoodElf = MW_Race('Wood Elf', race_data['WoodElf'])
 
 MW_RACES = [MWRace_Argonian, MWRace_Breton, MWRace_DarkElf, MWRace_HighElf, MWRace_Imperial, MWRace_Khajiit, MWRace_Nord, MWRace_Orc, MWRace_Redguard, MWRace_WoodElf]
