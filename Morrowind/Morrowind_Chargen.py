@@ -39,7 +39,7 @@ def gen_race(c: Character):
 
 def gen_class(c: Character):
     chosen_class = choice(MW_CLASSES)
-    c.char_class = chosen_class
+    c.char_class = chosen_class.name
     for it, skill in enumerate(c.skills):
         print(f'{skill.name} being evaluated...')
         if skill.name in chosen_class.minor_skills:
