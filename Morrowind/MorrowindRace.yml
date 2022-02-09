@@ -28,7 +28,7 @@ Argonian:
     Alchemy: 5
     Athletics: 15
     Illusion: 5
-    Medium Armour: 5
+    Medium Armor: 5
     Mysticism: 5
     Spear: 5
     Unarmoured: 5
@@ -99,7 +99,7 @@ DarkElf:
   Skills:
     Athletics: 5
     Destruction: 10
-    Light Armour: 5
+    Light Armor: 5
     Long Blade: 5
     Marksman: 5
     Mysticism: 5
@@ -174,7 +174,7 @@ Imperial:
   Skills:
     Blunt Weapon: 5
     Hand to Hand: 5
-    Light Armour: 5
+    Light Armor: 5
     Long Blade: 10
     Merchantile: 10
     Speechcraft: 10
@@ -209,7 +209,7 @@ Khajiit:
     Acrobatics: 15
     Athletics: 5
     Hand to Hand: 5
-    Light Armour: 5
+    Light Armor: 5
     Security: 5
     Short Blade: 5
     Sneak: 5
@@ -243,9 +243,9 @@ Nord:
   Skills:
     Axe: 10
     Blunt Weapon: 10
-    Heavy Armour: 5
+    Heavy Armor: 5
     Long Blade: 5
-    Medium Armour: 10
+    Medium Armor: 10
     Spear: 5
   Resists:
     Forst: 100
@@ -277,11 +277,11 @@ Orc:
     Weight: 1.1
   Magicka Multiplier Bonus: 0
   Skills:
-    Armourer: 10
+    Armorer: 10
     Axe: 5
     Block: 10
-    Heavy Armour: 10
-    Medium Armour: 10
+    Heavy Armor: 10
+    Medium Armor: 10
   Resists:
     Magicka: 25
 Redguard:
@@ -314,9 +314,9 @@ Redguard:
     Athletics: 5
     Axe: 5
     Blunt Weapon: 5
-    Heavy Armour: 5
+    Heavy Armor: 5
     Long Blade: 15
-    Medium Armour: 5
+    Medium Armor: 5
     Short Blade: 5
   Resists:
     Poison: 75
@@ -350,7 +350,7 @@ WoodElf:
   Skills:
     Acrobatics: 5
     Alchemy: 5
-    Light Armour: 10
+    Light Armor: 10
     Marksman: 15
     Sneak: 10
   Resists:
