@@ -1,0 +1,31 @@
+Additional_WeaponSet: Additional Weapon Set
+Bonus_Accuracy: Accuracy Bonus
+Bonus_BurnDamageToTarget: Burn Damage to Target
+Bonus_Constitution: Constitution Bonus
+Bonus_DamagePercent: Bonus Damage as %
+Bonus_DamageReduction: Damage Reduction
+Bonus_Deflection: Deflection Bonus
+Bonus_Dexterity: Dexterity Bonus
+Bonus_Endurance: Endurance Bonus
+Bonus_Fortitude: Fortitude Bonus
+Bonus_Might: Might Bonus
+Bonus_Reflex: Reflex Bonus
+Bonus_Will: Will Bonus
+BonusAlly_Fortitude: Ally Fortitude Bonus
+BonusAlly_MoveSpeed: Ally Movespeed Bonus
+BonusAlly_Reflex: Ally Reflex Bonus
+BonusAlly_Will: Ally Will Bonus
+DamageReduction_Burn: Damage Reduction from Burn
+DamageReduction_Freeze: Damage Reduction from Freeze
+DefenseAgainst_Disease: Defense Against Disease Attacks
+DefenseAgainst_Poison: Defense Against Poison Attacks
+DefenseAgainst_Prone: Defense Against Prone Attacks
+DefenseAgainst_Stunned: Defense Against Stunned Attacks
+HitsToCrits_Percent: "% of Hits that Crit"
+DurationEffect_Seconds: Effect Duration (in seconds)
+Target_ConcerntrationDebuff: Concentration Debuff on Target
+Target_DamageReduction: Target Damage Reduction
+Target_EnduranceDebuff: Endurance Debuff on Target
+Target_PierceDamageReductionPercentage: Target Piercing Damage Reduction as %
+Target_SlashDamageReductionPercentage: Target Slash Damage Reduction as %
+

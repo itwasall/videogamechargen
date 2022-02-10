@@ -166,7 +166,7 @@ chanter_phrases:
     area: 4m
     effects:
       Target_EnduranceDebuff: -2
-      DurationSecondsTarget_EnduranceDebuff: 3
+      DurationEffect_Seconds: 3
     duration: 4s
     linger: 2s
     desc: Drains a portion of Endurance from all enemies in the area of effect.
@@ -185,3 +185,12 @@ chanter_phrases:
     duration: 4s
     linger: 2s
     desc: Reduces Concentration of enemies in the area of effect.
+chanter_invocations:
+  - name: And Hel-Hyraf Crashed upon the Shield
+    area: 5m 90° Cone
+    range: false
+    interrupt: false
+    speed: Average
+    duration: 12s
+    effect:
+      Target_DamageReduction: 5
