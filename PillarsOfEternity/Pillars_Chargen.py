@@ -4,6 +4,7 @@ from random import choice
 
 from PillarsRace import SUBRACES, ALL_SUBRACES, RACES
 from PillarsAttribute import ATTRIBUTES, STAT_BLOCK 
+from PillarsSkill import SKILL_BLOCK
 
 class Character:
     def __init__(self, name):
@@ -13,6 +14,7 @@ class Character:
         self.subrace = None
         self.char_class = None
         self.attributes = STAT_BLOCK
+        self.skills = SKILL_BLOCK
 
 
 def gen_race(c: Character, race: str = None):
@@ -24,3 +26,4 @@ def gen_race(c: Character, race: str = None):
 
 jerry = Character('Jerry')
 print(jerry.attributes.might)
+print(jerry.skills.athletics)

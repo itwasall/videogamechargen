@@ -1,13 +1,140 @@
 classes:
   Barbarian:
+    health: 6
+    endurance: { base: 48, per_level: 12}
+    accuracy: 25
+    defenses:
+      Deflection: 15
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
+    skills:
+      Athletics: 2
+      Survival: 1
   Chanter:
+    health: 4
+    endurance: { base: 36, per_level: 12}
+    accuracy: 25
+    defenses:
+      Deflection: 25
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
+    skills:
+      Lore: 2
+      Mechanics: 1
   Cipher:
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Steath: 1
+      Lore: 1
+      Mechanics: 1
   Druid:
+    skills:
+      Lore: 1
+      Survival: 2
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Lore: 1
+      Survival: 2
   Fighter:
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Athletics: 1
+      Lore: 1
+      Survival: 1
   Monk:
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Steath: 1
+      Athletics: 1
+      Survival: 1
   Paladin:
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Athletics: 2
+      Lore: 1
   Priest:
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Athletics: 1
+      Lore: 2
   Ranger:
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Stealth: 1
+      Survival: 2
   Rogue:
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Stealth: 1
+      Mechanics: 2
   Wizard:
+    health:
+    endurance: { base: 36, per_level: 12}
+    accuracy:
+    defenses:
+      Deflection: 
+      Fortitude:
+      Reflex:
+      Will:
+    skills:
+      Lore: 2
+      Mechanics: 1
 
