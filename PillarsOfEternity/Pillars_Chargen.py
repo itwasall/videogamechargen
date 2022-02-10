@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 from random import choice
 
-from Pillars_Race import SUBRACES, ALL_SUBRACES, RACES
+from PillarsRace import SUBRACES, ALL_SUBRACES, RACES
+from PillarsAttribute import ATTRIBUTES, STAT_BLOCK 
 
 class Character:
     def __init__(self, name):
@@ -11,7 +12,7 @@ class Character:
         self.race = None
         self.subrace = None
         self.char_class = None
-        self.attributes = None
+        self.attributes = STAT_BLOCK
 
 
 def gen_race(c: Character, race: str = None):
@@ -19,4 +20,7 @@ def gen_race(c: Character, race: str = None):
         r = choice(ALL_SUBRACES)
     else:
         r = choice(SUBRACES[race])
+    print(r.subrace_name)
 
+jerry = Character('Jerry')
+print(jerry.attributes.might)
