@@ -84,6 +84,7 @@ def gen_birthsign(c: Character, verbose: bool = False):
             # Processing all fortify birthsign abilities
             if 'fortify' in chosen_birthsign.effect[item].keys():
                 fort_keys = chosen_birthsign.effect[item]['fortify'].keys()
+                # All but magicka multiplier are buffs to c.attributes items, so this edge-case is caught here
                 if 'magicka_mult' in fort_keys:
                     c.race.magicka_mult_bonus += chosen_birthsign.effect[item]['fortify']['magicka_mult']
                 for a in c.attributes:
