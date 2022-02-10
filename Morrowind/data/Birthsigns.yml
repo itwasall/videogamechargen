@@ -1,58 +1,58 @@
 Warrior:
-  - name: Warwyrd
+  Warwyrd:
     fortify:
       attack: 10
 Mage:
-  - name: Fay
+  Fay:
     fortify:
       magicka_mult: 0.5
       attribute: Intelligence
 Thief:
-  - name: Akaviri Danger Sense
+  Akaviri Danger Sense:
     sanctuary: 10
 Serpant:
-  - spell: Star Curse
+  spell: Star Curse
 Lady:
-  - name: Lady's Favor
+  Lady's Favor:
     fortify:
       Personality: 25
-  - name: Lady's Grace
+  Lady's Grace:
     fortify:
       Endurance: 25
 Steed:
-  - name: Charioteer
+  Charioteer:
     fortify:
       Speed: 25
 Lord:
-  - name: Trollkin
+  Trollkin:
     resistance:
       Fire: -100
-  - spell: Blood of the North
+  spell: Blood of the North
 Apprentice:
-  - name: Elfborn
+  Elfborn:
     fortify:
       magicka_mult: 1.5
       attribute: Intelligence
     resistance:
       Magicka: -50
 Atronach:
-  - name: Wombburn
+  Wombburn:
     spell_absorption: 50
     fortify:
       magicka_mult: 2.0
       attribute: Intelligence
     stunted_magicka: yes
 Ritual:
-  - spell: Blessed Word
-  - spell: Blessed Touch
-  - power: Mara's Gift
+  spell: Blessed Word
+  spell: Blessed Touch
+  power: Mara's Gift
 Lover:
-  - name: Mooncalf
+  Mooncalf:
     fortify:
       Agility: 25
-  - power: Lover's Kiss
+  power: Lover's Kiss
 Shadow:
-  - power: Moonshadow
+  power: Moonshadow
 Tower:
-  - spell: Begger's Nose
-  - power: Tower Key
+  spell: Begger's Nose
+  power: Tower Key
