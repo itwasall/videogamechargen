@@ -1,0 +1,85 @@
+Fighting Spirit:
+  type: Passive
+  effect:
+    Bonus_Accuracy: 7
+    Bonus_DamagePercent: 15
+    DurationEffect_Seconds: 20
+  condition:
+    Self_EnduranceBelowHalf: true
+Distant Advantage:
+  type: passive
+  effect:
+    Bonus_Accuracy: 5
+    Bonus_Deflection: 5
+    Bonus_Reflex: 5
+  condition:
+    Distant_Enemy: true
+Elemental Endurance:
+  type: Passive
+  effect:
+    DamageReduction_Burn: 10
+    DamageReduction_Freeze: 10
+Hale and Hardy:
+  type: Passive
+  effect:
+    DefenseAgainst_Poison: 20
+    DefenseAgainst_Disease: 20
+Hunter's Instinct:
+  type: Passive
+  effect:
+    Bonus_Accuracy: 15
+  condition:
+    Target_Primordial: true
+    Target_Wilder: true
+Towering Physique:
+  type: Passive
+  effect:
+    DefenseAgainst_Stunned: 20
+    DefenseAgainst_Prone: 20
+Armed to the Teeth:
+  type: Passive
+  effect:
+    Additional_WeaponSet: 1
+Minor Threat:
+  type: Passive
+  effect:
+    HitsToCrits_Percent: 10
+  condition:
+    Target_TargetedByAlly: true
+Defiant Resolve:
+  type: Passive
+  effect:
+    Bonus_Deflection: 10
+    Bonus_Fortitude: 10
+    Bonus_Reflex: 10
+    Bonus_Will: 10
+    DurationEffect_Seconds: 10
+  condition:
+    TargetedBy_WillAttack: true
+Death's Usher:
+  type: Passive
+  effect:
+    Bonus_DamagePercent: 20
+  condition:
+    Target_LowEndurance: true
+Battle-Forged:
+  type: Passive
+  effect:
+    Bonus_DamageReduction: 4
+    Bonus_BurnDamageToTarget: 2
+Wellspring of Life:
+  type: Passive
+  effect:
+    Bonus_Might: 3
+    Bonus_Constitution: 3
+    Bonus_Dexterity: 3
+  condition:
+    Self_EnduranceBelowHalf: true
+Silver Tide:
+  type: Passive
+  effect:
+    Bonus_Endurance: 10
+  condition:
+    Self_EnduranceBelowThreeQuarters: true
+    Self_EnduranceBelowHalf: true
+    Self_EnduranceBelowOneQuarter: true

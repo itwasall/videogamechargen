@@ -1,0 +1,62 @@
+Aumauna:
+  attribute_bonus:
+    Might: 2
+  subtypes:
+    Coastal:
+      ability: Towering Physique
+    Island:
+      ability: Armed to the Teeth
+Dwarf:
+  attribute_bonus:
+    Might: 2
+    Constitution: 1
+    Dexterity: -1
+  subtypes:
+    Mountain:
+      ability: Hale and Hardy
+    Boreal:
+      ability: Hunter's Instinct
+Elf:
+  attribute_bonus:
+    Dexterity: 1
+    Perception: 1
+  subtypes:
+    Wood:
+      ability: Distant Advantage
+    Pale:
+      ability: Elemental Endurance
+Godlike:
+  attribute_bonus:
+    Dexterity: 1
+    Intellect: 1
+  subtypes:
+    Death:
+      ability: Death's Usher
+    Fire:
+      ability: Battle-Forged
+    Nature:
+      ability: Wellspring of Life
+    Moon:
+      ability: Silver Tide
+Human:
+  attribute_bonus:
+    Might: 1
+    Resolve: 1
+  subtypes:
+    Meadow Folk:
+      ability: Fighting Spirit
+    Ocean Folk:
+      ability: Fighting Spirit
+    Savannah Folk:
+      ability: Fighting Spirit
+Orlan:
+  attribute_bonus:
+    Perception: 2
+    Resolve: 1
+    Might: -1
+  subtypes:
+    Hearth:
+      ability: Minor Threat
+    Wild:
+      ability: Difiant Resolve
+
