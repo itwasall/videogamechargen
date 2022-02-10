@@ -43,8 +43,7 @@ Atronach:
       attribute: Intelligence
     stunted_magicka: yes
 Ritual:
-  spell: Blessed Word
-  spell: Blessed Touch
+  spell: [Blessed Word, Blessed Touch]
   power: Mara's Gift
 Lover:
   Mooncalf:

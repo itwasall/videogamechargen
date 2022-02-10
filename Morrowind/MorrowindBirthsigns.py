@@ -11,13 +11,12 @@ def birthsign_param_resolver(birth):
             effects['power'] = birth[key]
         else:
             effects[key] = birth[key]
-    print(effects)
     return effects
 
 class MW_Birthsign:
     def __init__(self, name, data):
         self.name = name
-        self.effect = birthsign_param_resolver(data) 
+        self.effect = birthsign_param_resolver(data)
 
 MWBirthsign_Warrior = MW_Birthsign('Warrior', bs_data['Warrior'])
 MWBirthsign_Mage = MW_Birthsign('Mage', bs_data['Mage'])
@@ -32,3 +31,6 @@ MWBirthsign_Ritual = MW_Birthsign('Ritual', bs_data['Ritual'])
 MWBirthsign_Lover = MW_Birthsign('Lover', bs_data['Lover'])
 MWBirthsign_Shadow = MW_Birthsign('Shadow', bs_data['Shadow'])
 MWBirthsign_Tower = MW_Birthsign('Tower', bs_data['Tower'])
+
+MW_BIRTHSIGNS = [MWBirthsign_Warrior, MWBirthsign_Mage, MWBirthsign_Thief, MWBirthsign_Serpant, MWBirthsign_Lady, MWBirthsign_Steed, MWBirthsign_Lord,
+                 MWBirthsign_Apprentice, MWBirthsign_Atronach, MWBirthsign_Ritual, MWBirthsign_Lover, MWBirthsign_Shadow, MWBirthsign_Tower]

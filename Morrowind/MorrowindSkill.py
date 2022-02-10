@@ -1,5 +1,5 @@
 class MW_Skill:
-    def __init__(self, name, specialisation, mw_attribute, skill_value = 0):
+    def __init__(self, name, specialisation, mw_attribute, skill_value = 5):
         self.name = name
         self.specialisation = specialisation
         self.mw_attribute = mw_attribute
