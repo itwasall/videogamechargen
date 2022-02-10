@@ -1,7 +1,7 @@
 classes:
   Barbarian:
-    health: 6
     endurance: { base: 48, per_level: 12}
+    health: 6
     accuracy: 25
     defenses:
       Deflection: 15
@@ -11,9 +11,10 @@ classes:
     skills:
       Athletics: 2
       Survival: 1
+    resource: no
   Chanter:
-    health: 4
     endurance: { base: 36, per_level: 12}
+    health: 4
     accuracy: 25
     defenses:
       Deflection: 25
@@ -23,118 +24,164 @@ classes:
     skills:
       Lore: 2
       Mechanics: 1
+    resource: Phrases
   Cipher:
-    health:
     endurance: { base: 36, per_level: 12}
-    accuracy:
+    health: 4
+    accuracy: 25
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 20
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Steath: 1
       Lore: 1
       Mechanics: 1
+    resource: Focus
   Druid:
-    skills:
-      Lore: 1
-      Survival: 2
-    health:
     endurance: { base: 36, per_level: 12}
-    accuracy:
+    health: 4
+    accuracy: 20
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 20
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Lore: 1
       Survival: 2
+    resource: Nature Spells
   Fighter:
-    health:
-    endurance: { base: 36, per_level: 12}
-    accuracy:
+    endurance: { base: 42, per_level: 14}
+    health: 5
+    accuracy: 30
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 30
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Athletics: 1
       Lore: 1
       Survival: 1
+    resource: no
   Monk:
-    health:
-    endurance: { base: 36, per_level: 12}
-    accuracy:
+    endurance: { base: 42, per_level: 14}
+    health: 6
+    accuracy: 30
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 25
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Steath: 1
       Athletics: 1
       Survival: 1
+    resource: Wounds
   Paladin:
-    health:
-    endurance: { base: 36, per_level: 12}
-    accuracy:
+    endurance: { base: 42, per_level: 14}
+    health: 5
+    accuracy: 25
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 20
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Athletics: 2
       Lore: 1
+    resource: no
   Priest:
-    health:
     endurance: { base: 36, per_level: 12}
-    accuracy:
+    health: 4
+    accuracy: 20
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 15
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Athletics: 1
       Lore: 2
+    resource: Faith Spells
   Ranger:
-    health:
     endurance: { base: 36, per_level: 12}
-    accuracy:
+    health: 5
+    accuracy: 30
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 20
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Stealth: 1
       Survival: 2
+    resource: no
   Rogue:
-    health:
     endurance: { base: 36, per_level: 12}
-    accuracy:
+    health: 4
+    accuracy: 30
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 15
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Stealth: 1
       Mechanics: 2
+    resource: no
   Wizard:
-    health:
     endurance: { base: 36, per_level: 12}
-    accuracy:
+    health: 4
+    accuracy: 20
     defenses:
-      Deflection: 
-      Fortitude:
-      Reflex:
-      Will:
+      Deflection: 10
+      Fortitude: 20
+      Reflex: 20
+      Will: 20
     skills:
       Lore: 2
       Mechanics: 1
-
+    resource: no
+chanter_phrases:
+  - name: At the Sight of their Comrades, their Hearts Grew Bold
+    area: 4m
+    effects:
+      BonusAlly_Fortitude: 10
+      BonusAlly_Will: 10
+    duration: 4s
+    linger: 2s
+    desc: Emboldens allies in the area of effect, giving bonuses to Fortitude and Will.
+  - name: Blessed Was Wengridh, Quickest of His Tribe
+    area: 4m
+    effects:
+      BonusAlly_MoveSpeed: 1.2
+      BonusAlly_Reflex: 10
+    duration: 4s
+    linger: 2s
+    desc: Increases the movement rate and Reflex of all allies in the area of effect.
+  - name: Come, Come Soft Winds of Death
+    area: 4m
+    effects:
+      Target_EnduranceDebuff: -2
+      DurationSecondsTarget_EnduranceDebuff: 3
+    duration: 4s
+    linger: 2s
+    desc: Drains a portion of Endurance from all enemies in the area of effect.
+  - name: Dull the Edge, Blunt the Point
+    area: 4m
+    effects:
+      Target_SlashDamageReductionPercentage: 10
+      Target_PierceDamageReductionPercentage: 10
+    duration: 4s
+    linger: 2s
+    desc: Reduces Slashing and Piercing damage of enemies in the area of effect.
+  - name: Thick Grew Their Tongues, Stumbling O'er Words
+    area: 4m
+    effects:
+      Target_ConcerntrationDebuff: 10
+    duration: 4s
+    linger: 2s
+    desc: Reduces Concentration of enemies in the area of effect.
