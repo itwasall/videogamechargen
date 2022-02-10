@@ -20,6 +20,9 @@ class MW_Race:
         else:
             self.resists = None
 
+    def __repr__(self):
+        return self.name
+
 MWRace_Argonian = MW_Race('Argonian', race_data['Argonian'])
 MWRace_Breton = MW_Race('Breton', race_data['Breton'])
 MWRace_DarkElf = MW_Race('Dark Elf', race_data['DarkElf'])

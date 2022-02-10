@@ -32,6 +32,25 @@ class Character:
         self.skills = [skill for skill in MW_SKILLS]
         self.attributes = [a for a in MW_ATTRIBUTES]
         self.birthsign = ""
+        self.max_health = 0
+        self.max_magicka = 0
+        self.max_fatigue = 0
+        self.fatigue_regen_per_second = 0
+        self.encumbrance = 0
+
+    def char_info(self):
+        print(f"Name - {self.name}")
+        print(f"Race - {self.race}")
+        print(f"Class - {self.char_class}")
+        print(f"Birthsign - {self.birthsign}")
+        print(f"Attributes - {[a for a in self.attributes]}")
+        print(f"Skills - {[s for s in self.skills]}")
+        print(f"Health - {self.max_health}")
+        print(f"Magicka - {self.max_magicka}")
+        print(f"Fatigue - {self.max_fatigue}")
+        print(f"Fatigue Regen - {self.fatigue_regen_per_second}")
+        print(f"Encumbrance - {self.encumbrance}")
+
 
 def gen_race(c: Character):
     chosen_race = choice(MW_RACES)
@@ -97,19 +116,26 @@ def gen_birthsign(c: Character, verbose: bool = False):
                     if resist_type in res_keys:
                         resist_type += res_keys[resist_type]
 
-def calc_derrived_stats():
+def calc_derrived_stats(c: Character):
     # Health = (Strength + Endurance) / 2
+    c.max_health = (c.attributes[0].value + c.attributes[5].value) / 2
     # Magicka = Intelligence x (1 + Racial Modifier + Birthsign modifier)
+    c.max_magicka = c.attributes[1].value * (1 + c.race.magicka_mult_bonus)
     # Fatigue = Strength + Willpower + Agility + Endurance
+    c.max_fatigue = c.attributes[0].value + c.attributes[2].value + c.attributes[3].value + c.attributes[5].value
     # Fatigue Regen/s = 2.5 + (0.02 * Endurance)
+    c.fatigue_regen_per_second = 2.5 + (0.02 * c.attributes[5].value)
     # Encumbrance = Strength x 5
-    pass
+    c.encumbrance = c.attributes[0].value * 5
 
-jerry = Character('a', 'male')
-gen_race(jerry)
-print(jerry.attributes)
-gen_class(jerry)
-print(jerry.attributes)
-gen_birthsign(jerry)
-print(jerry.attributes)
-print([skill for skill in jerry.skills if skill.skill_value > 5])
+
+def gen_character(name: str, gender: str = None):
+    character = Character(name=name, gender=gender)
+    gen_race(character)
+    gen_class(character)
+    gen_birthsign(character)
+    calc_derrived_stats(character)
+    return character
+    
+c = gen_character('Jerry')
+c.char_info()

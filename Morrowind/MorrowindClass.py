@@ -1,6 +1,6 @@
 from yaml import safe_load
 
-class_data = safe_load(open('Morrowind\\data\\Classes.yml', 'rt'))
+class_data = safe_load(open('Morrowind/data/Classes.yml', 'rt'))
 
 class MW_Class:
     def __init__(self, name, class_data):
