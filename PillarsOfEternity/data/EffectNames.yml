@@ -1,7 +1,17 @@
+AnimalBonus_BaseDamage: Base Damage Bonus
+AnimalBonus_DamageThreshold: Base Damage Threshold Bonus
+AnimalBonus_Deflection: Deflection Bonus
+AnimalBonus_Fortitude: Fortitude Bonus
+AnimalBonus_Reflexes: Reflex Bonus
+AnimalBonus_MightAsPercentage: Bonus to MIG as %
+AnimalBonus_Will: Will Bonus
+AnimalDefenseAgainst_Disengage: Defense Against Disengage Attacks
 Additional_WeaponSet: Additional Weapon Set
 Bonus_Accuracy: Accuracy Bonus
 Bonus_BurnDamageToTarget: Burn Damage to Target
 Bonus_Constitution: Constitution Bonus
+Bonus_Concerntration: Concerntration Bonus
+Bonus_DamageCorrodeAsPercentage: Bonus Corrode Damage as %
 Bonus_DamagePercent: Bonus Damage as %
 Bonus_DamageReduction: Damage Reduction
 Bonus_Deflection: Deflection Bonus
@@ -9,6 +19,7 @@ Bonus_Dexterity: Dexterity Bonus
 Bonus_Endurance: Endurance Bonus
 Bonus_Fortitude: Fortitude Bonus
 Bonus_Might: Might Bonus
+Bonus_MoveSpeed: Movespeed Bonus
 Bonus_Reflex: Reflex Bonus
 Bonus_Will: Will Bonus
 BonusAlly_Fortitude: Ally Fortitude Bonus
@@ -17,15 +28,41 @@ BonusAlly_Reflex: Ally Reflex Bonus
 BonusAlly_Will: Ally Will Bonus
 DamageReduction_Burn: Damage Reduction from Burn
 DamageReduction_Freeze: Damage Reduction from Freeze
+DamageReduction_Slash: Damage Reduction against Slash Attacks
+DamageReduction_Shock: Damage Reduction from Shock
+DamageReductionAlly_Shock: Ally Damage Reduction against Shock
+DamageReductionAlly_Slash: Ally Damage Reduction against Slash
 DefenseAgainst_Disease: Defense Against Disease Attacks
 DefenseAgainst_Poison: Defense Against Poison Attacks
 DefenseAgainst_Prone: Defense Against Prone Attacks
 DefenseAgainst_Stunned: Defense Against Stunned Attacks
-HitsToCrits_Percent: "% of Hits that Crit"
 DurationEffect_Seconds: Effect Duration (in seconds)
+HitsToCrits_Percent: "% of Hits that Crit"
+Summon_HumanSkeleton: "Summonable Human Skeletons"
+Summon_Phantom: Summonable Phantoms
+Summon_Weapon: Summonable Weapon
+Target_AccuracyDebuff: Target Accuracy Reduction
 Target_ConcerntrationDebuff: Concentration Debuff on Target
 Target_DamageReduction: Target Damage Reduction
+Target_DurationBlinded: Target Blinded (in seconds)
+Target_DurationCharmed: Target Charmed (in seconds)
+Target_DurationConfused: Target Confused (in seconds)
+Target_DurationDazed: Target Dazed (in seconds)
+Target_DurationFrightened: Target Frightened (in seconds)
+Target_DurationHobbled: Target Hobbled (in seconds)
+Target_DurationProne: Target Proned (in seconds)
+Target_DurationStunned: Target Stunned (in seconds)
 Target_EnduranceDebuff: Endurance Debuff on Target
+Target_MultiHit: Multi-hit
 Target_PierceDamageReductionPercentage: Target Piercing Damage Reduction as %
+Target_Push: Target Pushed (in m)
 Target_SlashDamageReductionPercentage: Target Slash Damage Reduction as %
-
+Target_WillDebuff: Target Will Reduction
+TargetDamage_Burn: Burn Damage Dealt Against Target
+TargetDamage_Corrode: Corrode Damage Dealt Against Target
+TargetDamage_Crush: Crush Damage Dealt Against Target
+TargetDamage_Freeze: Freeze Damage Dealt Against Target
+TargetDamage_Pierce: Pierce Damage Dealt Against Target
+TargetDamage_Raw: Raw Damage Dealt Against Target
+TargetDamage_Shock: Shock Damage Dealt Against Target
+TargetDamage_JumpTargets_Shock: Shock Damage Dealt Against Targets Hit By Jumps

@@ -145,18 +145,47 @@ classes:
       Lore: 2
       Mechanics: 1
     resource: no
+
+# The bizzare syntax I thought would be funny to use for conditional effects
+#  1. When condition(s) affect all effect:
+#     - name: x
+#       effect:
+#          a: 1
+#          b: 2
+#       condition:
+#          this_is_true: true
+#
+#  2. When effect is requires multiple parameters:
+#     - name: x
+#       effect:
+#          a: 1
+#          _effect:
+#             b_damage: 10
+#             b_duration: 10s
+#          c: 3
+#       condition:
+#          this_is_true: true
+#
+#  3. When effect is one of several possible options:
+#  name: x
+#  effect:
+#   _conditional:
+#    _choice:
+#     a: 1
+#     c: 2
+#
 chanter_phrases:
-  - name: At the Sight of their Comrades, their Hearts Grew Bold
+  - name: At the Sight of their Comrades\, their Hearts Grew Bold
     area: 4m
-    effects:
+    effect:
       BonusAlly_Fortitude: 10
       BonusAlly_Will: 10
     duration: 4s
     linger: 2s
     desc: Emboldens allies in the area of effect, giving bonuses to Fortitude and Will.
-  - name: Blessed Was Wengridh, Quickest of His Tribe
+  - name: Blessed Was Wengridh\, Quickest of His Tribe
     area: 4m
-    effects:
+    effect:
       BonusAlly_MoveSpeed: 1.2
       BonusAlly_Reflex: 10
     duration: 4s
@@ -164,33 +193,407 @@ chanter_phrases:
     desc: Increases the movement rate and Reflex of all allies in the area of effect.
   - name: Come, Come Soft Winds of Death
     area: 4m
-    effects:
+    effect:
       Target_EnduranceDebuff: -2
       DurationEffect_Seconds: 3
     duration: 4s
     linger: 2s
     desc: Drains a portion of Endurance from all enemies in the area of effect.
-  - name: Dull the Edge, Blunt the Point
+  - name: Dull the Edge\, Blunt the Point
     area: 4m
-    effects:
+    effect:
       Target_SlashDamageReductionPercentage: 10
       Target_PierceDamageReductionPercentage: 10
     duration: 4s
     linger: 2s
     desc: Reduces Slashing and Piercing damage of enemies in the area of effect.
-  - name: Thick Grew Their Tongues, Stumbling O'er Words
+  - name: Thick Grew Their Tongues\, Stumbling O'er Words
     area: 4m
-    effects:
+    effect:
       Target_ConcerntrationDebuff: 10
     duration: 4s
     linger: 2s
     desc: Reduces Concentration of enemies in the area of effect.
 chanter_invocations:
   - name: And Hel-Hyraf Crashed upon the Shield
-    area: 5m 90° Cone
-    range: false
-    interrupt: false
-    speed: Average
-    duration: 12s
     effect:
       Target_DamageReduction: 5
+    speed: Average
+    duration: 12s
+    interrupt: false
+    range: false
+    area: 5m 90° Cone
+    desc: ""
+  - name: But Reny Daret's Ghost, He Would not Rest
+    effect:
+      Summon_Phantom: 1
+    speed: Average
+    duration: 12s
+    interrupt: false
+    range: 10m
+    area: false
+    desc: ""
+  - name: If their Bones Still Slept Under that Hill, None Can Say
+    effect:
+      Summon_HumanSkeleton: 3
+    speed: Average
+    duration: 20s
+    interrupt: false
+    range: 10m
+    area: false
+    desc: ""
+  - name: Not Felled by the Axe, Nor Broken by the Storm
+    effect:
+      DamageReductionAlly_Shock: 10
+      DamageReductionAlly_Slash: 10
+      DamageReduction_Shock: 10
+      DamageReduction_Slash: 10
+    speed: Average
+    duration: 20s
+    interrupt: false
+    range: false
+    area: 2.5m 90° Cone
+    desc: ""
+  - name: The Thunder Rolled Like Waves on Black Seas
+    effect:
+      TargetDamage_Crush: [12, 18]
+      Target_Push: 4m
+      Target_DurationStunned: 5s
+    speed: Average
+    duration: 5s
+    interrupt:
+    range:
+    area: 2.5m 90° Cone
+    desc: ""
+  - name: Thrice Was She Wronged, and Thrice Justly Avenged
+    effect:
+      TargetDamage_Shock: [12, 18]
+      Target_MultiHit: 3
+    speed: Average
+    duration: false
+    interrupt: 0.5 sec (Average)
+    range:
+    area: 3m 90° Cone
+    desc: ""
+  - name: White Worms Writhed in the Bellies of the Dead
+    effect:
+      TargetDamage_Crush: [20, 30]
+    speed: Average
+    duration: false
+    interrupt: 0.5 sec (Average)
+    range:
+    area: 10m 90° Cone + 2m Radius
+    desc: ""
+cipher_spells:
+  - name: Antipathetic Field
+    focus_cost: 10
+    effect:
+      TargetDamage_Corrode: [13, 20]
+      Bonus_DamageCorrodeAsPercentage: 20
+      DurationEffect_Seconds: 12
+    speed: Average
+    duration: 6s
+    range: 15m
+    area: Beam
+    desc: ""
+  - name: Eyestrike
+    focus_cost: 10
+    effect:
+      Target_DurationBlinded: 10s
+      Target_DurationDazed: 10s
+    speed: Average
+    duration: 10s
+    range: 10m
+    area: Target + 1.5m radius
+    desc: ""
+  - name: Mind Wave
+    focus_cost: 10
+    effect:
+      TargetDamage_Raw: [10, 18]
+      Target_DurationProne: 3
+    speed: Fast
+    duration: 3s
+    range: 8m
+    area: 3.5m 120° Cone
+    desc: ""
+  - name: Mind Wave
+    focus_cost: 10
+    effect:
+      TargetDamage_Shock: [22, 30]
+    speed: Average
+    duration: false
+    range: 6m
+    area: Allied Target + 1.75m radius
+    desc: ""
+  - name: Tenuous Grasp
+    focus_cost: 10
+    effect:
+      Target_DurationFrightened: 15
+      Target_DurationConfused: 6s
+    speed: Average
+    duration: false
+    range: 10m
+    area: Foe Target
+    desc: ""
+  - name: Whisper of Treason
+    focus_cost: 10
+    effect:
+      Target_DurationCharmed: 10
+    speed: Fast
+    duration: 10s
+    range: 7m
+    area: false
+    desc: ""
+druid_shapeshift:
+  - name: Spiritshift Bear
+    form: Bear
+    damage_type: Slash
+    abilities: [Druid Bear Terrifying Roar]
+    weapon: Druid Bear Claws
+    armour: Spiritshift Bear Hide
+  - name: Spiritshift Boar
+    form: Boar
+    damage_type: Pierce
+    abilities: [Druid Boar Regeneration]
+    weapon: Druid Boar Tusks
+    armour: Spiritshift Hide
+  - name: Spiritshift Cat
+    form: Cat
+    damage_type: Slash
+    abilities: [Cat Flurry Attack]
+    weapon: Druid Cat Claws
+    armour: Spiritshift Hide
+  - name: Spiritshift Stag
+    form: Stag
+    damage_type: Pierce
+    abilities: [Druid Stag Carnage, Druid Stag Defenses]
+    weapon: Druid Stag Horns
+    armour: Spiritshift Hide
+  - name: Spiritshift Wolf
+    form: Wolf
+    damage_type: Pierce
+    abilities: [Knock Down]
+    weapon: Druid Wolf Teeth
+    armour: Spiritshift Hide
+paladin_order:
+  - name: The Shieldbearers of St. Elcga
+    favoured_behaviours: [Diplomatic, Honest]
+    disfavoured_behaviours: [Aggresive, Cruel]
+  - name: Bleak Walkers
+    favoured_behaviours: [Aggresive, Cruel]
+    disfavoured_behaviours: [Diplomatic, Benevolent]
+  - name: Kind Wayfarers
+    favoured_behaviours: [Benevolent, Passionate]
+    disfavoured_behaviours: [Deceptive, Cruel]
+  - name: Goldpact Knights
+    favoured_behaviours: [Rational, Stoic]
+    disfavoured_behaviours: [Passionate, Aggresive]
+  - name: Darcozzi Paladini
+    favoured_behaviours: [Clever, Passionate]
+    disfavoured_behaviours: [Cruel Stoic]
+  - name: The Steel Garrote
+    favoured_behaviours: [Rational, Cruel]
+    disfavoured_behaviours: [Diplomatic, Benevolent]
+priest_deity:
+  - name: Berath
+    favoured_dispositions: [Stoic, Rational]
+    condemed_dispositions: [Cruel, Passionate]
+    favoured_weapons: [Mace, Great sword]
+    talent: The Pallid Hand
+  - name: Eothas
+    favoured_dispositions: [Honest, Benevolent]
+    condemed_dispositions: [Cruel, Shady / Deceptive]
+    favoured_weapons: [Flail, Morning star]
+    talent: Hope Eternal
+  - name: Magran
+    favoured_dispositions: [Aggresive, Clever]
+    condemed_dispositions: [Passionate, Diplomatic]
+    favoured_weapons: [Sword, Arquebus]
+    talent: Inspired Flame
+  - name: Skaen
+    favoured_dispositions: [Cruel, Shady / Deceptive]
+    condemed_dispositions: [Aggresive, Benevolent]
+    favoured_weapons: [Stiletto, Club]
+    talent: Prey on the Weak
+  - name: Wael
+    favoured_dispositions: [Deceptive, Clever]
+    condemed_dispositions: [Rational, Honest]
+    favoured_weapons: [Quarterstaff, Rof]
+    talent: Incomprehensible Revelation
+ranger_animal_companion:
+  - name: Antelope
+    stat_block: {'MIG': 10, 'CON': 10, 'DEX': 14, 'PER': 15, 'INT': 5, 'RES': 9}
+    DR: 9
+    abilities: false
+    effect:
+      AnimalBonus_Deflection: 7
+      AnimalBonus_Fortitude: 7
+      AnimalBonus_Reflexes: 7
+      AnimalBonus_Will: 7
+  - name: Bear
+    stat_block: {'MIG': 15, 'CON': 12, 'DEX': 9, 'PER': 13, 'INT': 5, 'RES': 10}
+    DR: 11
+    abilities: false
+    effect:
+      AnimalBonus_DamageThreshold: 2
+  - name: Boar
+    stat_block: {'MIG': 11, 'CON': 16, 'DEX': 8, 'PER': 10, 'INT': 5, 'RES': 15}
+    DR: 9
+    abilities: false
+    effect:
+      AnimalBonus_MightAsPercentage: 20
+    condition:
+      AnimalEndurance_BelowHalf: true
+  - name: Lion
+    stat_block: {'MIG': 13, 'CON': 13, 'DEX': 12, 'PER': 11, 'INT': 5, 'RES': 11}
+    DR: 9
+    abilities: [Frightening Roar]
+    effect: false
+  - name: Stag
+    stat_block: {'MIG': 13, 'CON': 10, 'DEX': 12, 'PER': 15, 'INT': 5, 'RES': 10}
+    DR: 9
+    abilities: [Druid Stag Carnage]
+    effect: false
+  - name: Wolf
+    stat_block: {'MIG': 10, 'CON': 10, 'DEX': 13, 'PER': 15, 'INT': 5, 'RES': 12}
+    DR: 9
+    abilities: false
+    effect:
+      AnimalBonus_BaseDamage: 2
+      AnimalDefenseAgainst_Disengage: 12
+wizard_spells:
+  - name: Arcane Assault
+    speed: Fast
+    range: 8m
+    area: 1.25m Radius
+    duration: 6s
+    effect:
+      TargetDamage_Raw: [10, 16]
+      _conditional:
+        _condition:
+          - Target_DurationDazed: 6s
+    condition:
+      Target_LostDiceRoll: true
+  - name: Akemyr's Dazzling Lights
+    speed: Average
+    range: 10m
+    area: 1.25m Radius
+    duration: 12s
+    effect:
+      Target_WillDebuff: -10
+      Target_DurationDazed: 12s
+  - name: Chill Fog
+    speed: Average
+    range: 10m
+    area: 2.5m Radius
+    duration: 15s
+    effect:
+      TargetDamage_Freeze: [12, 18]
+      Target_DurationBlinded: 3s
+  - name: Concealhaut's Parasitic Staff
+    speed: Fast
+    range: no
+    area: no
+    duration: 45s
+    effect:
+      Summon_Weapon: Concelhaut's Parasitic Quarterstaff
+  - name: Eldritch Aim
+    speed: Fast
+    range: no
+    area: no
+    duration: 10s
+    effect:
+      Bonus_Accuracy: 15
+      DurationEffect_Seconds: 10
+  - name: Fan of Flames
+    speed: Average
+    range: no
+    area: 5.0m 120° Cone
+    duration: no
+    effect:
+      TargetDamage_Burn: [30, 42]
+  - name: Fleet Feet
+    speed: Fast
+    range: no
+    area: no
+    duration: 30s
+    effect:
+      Bonus_MoveSpeed: 3
+      Bonus_Deflection: 20
+      Bonus_Fortitude: 20
+      Bonus_Reflex: 20
+      Bonus_Will: 20
+      DurationEffect_Seconds: 30
+    condition:
+      Self_Disengaging: true
+  - name: Ghost Blades
+    speed: Average
+    range: no
+    area: 5.0m 145° Cone
+    duration: 4.0s
+    effect:
+      TargetDamage_Pierce: [20, 30]
+      Target_DurationHobbled: 4s
+  - name: Jolting Touch
+    speed: Average
+    range: 2m Jump
+    area: Target +  2 Foe Jump Targets
+    duration: no
+    effect:
+      TargetDamage_Shock: [20, 35]
+      _effect:
+        TargetDamage_JumpTargets_Shock: [15, 26]
+        Target_MultiHit: 2
+  - name: Kalakoth's Sunless Grasp
+    speed: Average
+    range: no
+    area: no
+    duration: 15s
+    effect:
+      TargetDamage_Freeze: [18, 26]
+      _effect:
+        Target_AccuracyDebuff: -10
+        DurationEffect_Seconds: 15
+  - name: Minoletta's Minor Missiles
+    speed: Fast
+    range: 15m
+    area: no
+    duration: no
+    effect:
+      _conditional:
+        _choice:
+          - TargetDamage_Corrode: [12, 21]
+          - TargetDamage_Crush: [12, 21]
+  - name: Slicken
+    speed: Average
+    range: 10m
+    area: 2.5m Radius
+    duration: 4.0s
+    effect:
+      Target_DurationProne: 4s
+  - name: Spirit Shield
+    speed: Fast
+    range: no
+    area: no
+    duration: 45s
+    effect:
+      Bonus_DamageReduction: 3
+      Bonus_Concerntration: 30
+  - name: Thrust of Tattered Veils
+    speed: Fast
+    range: 10m
+    area: no
+    duration: no
+    effect:
+      TargetDamage_Crush: [18, 35]
+  - name: Wizard's Double
+    speed: Fast
+    range: no
+    area: no
+    duration: no
+    effect:
+      _conditional:
+        _condition:
+          Bonus_Deflection: 40
+    condition:
+      Self_NotBeenHitSinceCast: true

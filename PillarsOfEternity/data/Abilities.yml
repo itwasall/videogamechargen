@@ -83,3 +83,51 @@ Silver Tide:
     Self_EnduranceBelowThreeQuarters: true
     Self_EnduranceBelowHalf: true
     Self_EnduranceBelowOneQuarter: true
+Druid Bear Terrifying Roar:
+  type: Passive
+  effect:
+    Target_DurationFrightened: 10
+  condition:
+    Self_IsFormBoar: true
+Druid Boar Regeneration:
+  type: Passive
+  effect:
+    Regen_Endurance: 2
+    DurationEffect_Seconds: 3
+  condition:
+    Self_IsFormBoar: true
+Cat Flurry Attack:
+  type: Active
+  effect:
+    Bonus_AttackSpeedAsPercentage: 33
+    DurationEffect_Seconds: 10
+  condition:
+    Self_IsFormCat: true
+Druid Stag Carnage:
+  type: Active
+  effect:
+    Bonus_DamagePercent: 33
+  condition:
+    Target_DistanceWithin1m: true
+    Self_IsFormStag: true
+Druid Stag Defenses:
+  type: Passive
+  effect:
+    Bonus_Deflection: 7
+    Bonus_Fortitude: 7
+    Bonus_Reflex: 7
+    Bonus_Will: 7
+  condition:
+    Self_IsFormStag: true
+Knock Down:
+  type: Active
+  effect:
+    Target_Push: 0.1m
+    Target_DurationProne: 3s
+  condition:
+    Target_SuccessfullyPushed: true
+Frightening Roar:
+  type: Active
+  effect:
+    Target_DurationFrightened: 11s
+
