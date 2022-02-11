@@ -10,7 +10,7 @@ class Pillars_Skill:
         return f"{self.name} rank: {self.rank}"
 
     def __add__(self, x: int):
-        return Skill(self.name, (self.rank + x))
+        return Pillars_Skill(self.name, (self.rank + x))
 
 class Pillars_SkillBlock:
     def __init__(

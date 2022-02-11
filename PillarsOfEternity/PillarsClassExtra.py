@@ -1,9 +1,6 @@
 from dis import dis
 from numpy import isin
 from yaml import safe_load
-import os
-
-print(os.getcwd())
 
 ab_data = safe_load(open('PillarsOfEternity/data/Abilities.yml', 'rt'))
 ef_data = safe_load(open('PillarsOfEternity/data/EffectNames.yml', 'rt'))
@@ -15,6 +12,8 @@ class Pillars_ClassExtra:
             self.effect = self.get_effects(effect)
         else:
             self.effect = None
+    def __repr__(self):
+        return self.name
 
     def get_effects(self, effects):
         return_dict = {}

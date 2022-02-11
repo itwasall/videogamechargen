@@ -10,7 +10,7 @@ class Pillars_Attribute:
         return Pillars_Attribute(self.name, (self.value + x))
 
     def __repr__(self):
-        return f"{self.name}: {self.value}"
+        return str(self.value)
 
 class Pillars_AttributeBlock:
     def __init__(
@@ -25,10 +25,10 @@ class Pillars_AttributeBlock:
         self.might = mig
         self.constitution = con
         self.dexterity = dex
-        self.personality = per
+        self.perception = per
         self.intelligence = inte
         self.resolve = res
-        self.attribute_list = [self.might, self.constitution, self.dexterity, self.personality,
+        self.attribute_list = [self.might, self.constitution, self.dexterity, self.perception,
                                self.intelligence, self.resolve]
 
     def __repr__(self):
@@ -38,7 +38,7 @@ class Pillars_AttributeBlock:
 PAttribute_MIG = Pillars_Attribute('Might')
 PAttribute_CON = Pillars_Attribute('Constitution')
 PAttribute_DEX = Pillars_Attribute('Dexterity')
-PAttribute_PER = Pillars_Attribute('Personality')
+PAttribute_PER = Pillars_Attribute('Perception')
 PAttribute_INT = Pillars_Attribute('Intelligence')
 PAttribute_RES = Pillars_Attribute('Resolve')
 

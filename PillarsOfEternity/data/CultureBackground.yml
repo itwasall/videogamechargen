@@ -1,0 +1,163 @@
+culture:
+  Aedyr:
+    attribute_bonus:
+      Resolve: 1
+  Deadfire Archipelago:
+    attribute_bonus:
+      Dexterity: 1
+  Ixamitl Plains:
+    attribute_bonus:
+      Resolve: 1
+  Old Vailia:
+    attribute_bonus:
+      Intellect: 1
+  Rauatai:
+    attribute_bonus:
+      Constitution: 1
+  The Living Lands:
+    attribute_bonus:
+      Might: 1
+  The White that Wends:
+    attribute_bonus:
+      Perception: 1
+background:
+  Aristocrat:
+    skill_bonus:
+      Lore: 2
+    required_backgrounds:
+      - Aedyr
+      - Deadfire Archipelago
+      - Ixamitl Plains
+      - Old Vailia
+      - Rauatai
+      - The White that Wends
+  Artist:
+    skill_bonus:
+      Lore: 2
+    required_backgrounds:
+      - Old Vailia
+  Clergy:
+    skill_bonus:
+      Lore: 2
+    required_backgrounds:
+      - Aedyr
+  Colonist:
+    skill_bonus:
+      Survival: 2
+    required_backgrounds:
+     - Aedyr
+     - Old Vailia
+     - The Living Lands
+  Dissident:
+    skill_bonus:
+      Lore: 1
+      Stealth: 1
+    required_backgrounds:
+      - Aedyr
+      - Ixamitl Plains
+      - Old Vailia
+      - Rauatai
+  Drifter:
+    skill_bonus:
+      Mechanics: 1
+      Stealth: 1
+    required_backgrounds:
+      - Aedyr
+      - Deadfire Archipelago
+      - Ixamitl Plains
+      - Old Vailia
+      - Rauatai
+      - The Living Lands
+      - The White that Wends
+  Explorer:
+    skill_bonus:
+      Lore: 1
+      Survival: 1
+    required_backgrounds:
+      - Deadfire Archipelago
+      - The Living Lands
+      - The White that Wends
+  Hunter:
+    skill_bonus:
+      Survival: 1
+      Stealth: 1
+    required_backgrounds:
+      - Aedyr
+      - Deadfire Archipelago
+      - Ixamitl Plains
+      - Old Vailia
+      - Rauatai
+      - The Living Lands
+      - The White that Wends
+  Laborer:
+    skill_bonus:
+      Mechanics: 1
+      Athletics: 1
+    required_backgrounds:
+      - Aedyr
+      - Deadfire Archipelago
+      - Ixamitl Plains
+      - Old Vailia
+      - Rauatai
+      - The Living Lands
+      - The White that Wends
+  Mercenary:
+    skill_bonus:
+      Lore: 1
+      Athletics: 1
+    required_backgrounds:
+      - Aedyr
+      - Deadfire Archipelago
+      - Ixamitl Plains
+      - Old Vailia
+      - Rauatai
+      - The Living Lands
+  Merchant:
+    skill_bonus:
+      Lore: 1
+      Mechanics: 1
+    required_backgrounds:
+      - Aedyr
+      - Deadfire Archipelago
+      - Ixamitl Plains
+      - Old Vailia
+      - Rauatai
+      - The Living Lands
+      - The White that Wends
+  Mystic:
+    skill_bonus:
+      Lore: 2
+    required_backgrounds:
+      - The White that Wends
+  Philosopher:
+    skill_bonus:
+      Lore: 2
+    required_backgrounds:
+      - Ixamitl Plains
+  Raider:
+    skill_bonus:
+      Athletics: 1
+      Stealth: 1
+    required_backgrounds:
+      - Deadfire Archipelago
+  Scholar:
+    skill_bonus:
+      Lore: 2
+    required_backgrounds:
+      - Ixamitl Plains
+      - Rauatai
+  Scientist:
+    skill_bonus:
+      Lore: 1
+      Mechanics: 1
+    required_backgrounds:
+      - The Living Lands
+  Slave:
+    skill_bonus:
+      Athletics: 1
+      Survival: 1
+    required_backgrounds:
+      - Aedyr
+      - Deadfire Archipelago
+      - Old Vailia
+      - Rauatai
