@@ -3,8 +3,8 @@ from random import choice
 from MorrowindRace import MW_RACES, MW_Race
 from MorrowindSkill import MW_SKILLS, MW_Skill
 from MorrowindClass import MW_CLASSES, MW_Class
-from MorrowindAttributes import MW_ATTRIBUTES, MW_Attribute
-from MorrowindBirthsigns import MW_BIRTHSIGNS, MWBirthsign_Steed
+from MorrowindAttribute import MW_ATTRIBUTES, MW_Attribute
+from MorrowindBirthsign import MW_BIRTHSIGNS, MWBirthsign_Steed
 
 # An inbetween class for birthsigns. This will hold any relevant but non-attribute/skill alterating
 #   birthsign properties

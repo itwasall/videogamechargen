@@ -47,18 +47,18 @@ s = 'Combat'
 a = 'Stregnth'
 OblSkill_Blade = Oblivion_Skill('Blade', a, s)
 OblSkill_Blunt = Oblivion_Skill('Blunt', a, s)
-OblSkill_HandtoHand = Oblivion_Skill('HandtoHand', a, s)
+OblSkill_HandtoHand = Oblivion_Skill('Hand to Hand', a, s)
 # Endurance
 a = 'Endurance'
 OblSkill_Armorer = Oblivion_Skill('Armorer', a, s)
 OblSkill_Block = Oblivion_Skill('Block', a, s)
-OblSkill_HeavyArmor = Oblivion_Skill('HeavyArmor', a, s)
+OblSkill_HeavyArmor = Oblivion_Skill('Heavy Armor', a, s)
 # Speed
 a = 'Speed'
 OblSkill_Athletics = Oblivion_Skill('Athletics', a, s)
 s = 'Stealth'
 OblSkill_Acrobatics = Oblivion_Skill('Acrobatics', a, s)
-OblSkill_LightArmor = Oblivion_Skill('LightArmor', a, s)
+OblSkill_LightArmor = Oblivion_Skill('Light Armor', a, s)
 # Agility
 a = 'agility'
 OblSkill_Security = Oblivion_Skill('Security', a, s)

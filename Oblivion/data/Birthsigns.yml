@@ -1,0 +1,47 @@
+Apprentice:
+  effects:
+    fortifyMagicka: 100
+    fortifyRes_Magicka: -100
+Atronach:
+  effects:
+    fortifyMagicka: 150
+    spellAbsorption: 50
+    stuntedMagicka: true
+Lady:
+  effects:
+    fortifyWillpower: 10
+    fortifyEndurance: 10
+Lord:
+  effects:
+    power: [Blood of the North]
+    fortifyRes_Fire: -25
+Lover:
+  effects:
+    power: [Lover's Kiss]
+Mage:
+  effects:
+    fortifyMagicka: 50
+Ritual:
+  effects:
+    power: [Blessed Word, Mara's Gift]
+Serpent:
+  effects:
+    power: [Serpent Spell]
+Shadow:
+  effects:
+    power: [Moonshadow]
+Steed:
+  effects:
+    fortifySpeed: 20
+Thief:
+  effects:
+    fortifyAgility: 10
+    fortifyLuck: 10
+    fortifySpeed: 10
+Tower:
+  effects:
+    power: [Tower Key, Tower Warden]
+Warrior:
+  effects:
+    fortifyEndurance: 10
+    fortifyStrength: 10
