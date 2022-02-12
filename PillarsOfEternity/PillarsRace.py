@@ -24,7 +24,7 @@ class Pillars_Subrace(Pillars_Race):
         self.parent = parent_race
 
     def __repr__(self):
-        return f"{self.parent.name} - {self.subrace_name}"
+        return f"{self.subrace_name}"
 
 # Core Races
 PRace_Aumauna = Pillars_Race('Aumauna', r_data['Aumauna'])

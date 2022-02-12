@@ -12,11 +12,16 @@ class Character:
     def __init__(self, name):
         # Initing a bunch of stuff to be overwritten later by each gen_x function
         self.name = name
+        self.endurance = {'Base': None, 'Per Level': None}
+        self.health = None
+        self.defenses = {'Deflection': None, 'Fortitude': None, 'Reflex': None, 'Will': None}
+        self.accuracy = None
         self.gender = None
         self.race = None
         self.subrace = None
         self.char_class = None
         self.char_class_extra = {}
+        self.char_class_resource = None
         self.culture = None
         self.background = None
         # Technically creates redundancy as it'll produce
@@ -28,14 +33,27 @@ class Character:
         self.abilities = []
 
     def character_info(self):
-        print(self.name)
-        print(self.subrace)
-        print(f"{self.culture}, {self.background}")
+        print(f"      Name: {self.name}")
+        print(f"      Race: {self.subrace}")
+        if self.char_class_resource:
+            print(f"     Class: {self.char_class} - {self.char_class_resource}")
+        else:
+            print(f"     Class: {self.char_class}")
+        print(f"   Culture: {self.culture}")
+        print(f"Background: {self.background}")
         # e.g.
         # Might: 1,  Constitution: -1
         # Athletics: 0,  Lore: 1
-        print(",  ".join([f"{a}: {b}" for a, b in zip([i for i in self.attributes.keys()], [self.attributes[i].value for i in self.attributes])]))
-        print(",  ".join([f"{a}: {b}" for a, b in zip([i for i in self.skills.keys()], [self.skills[i].rank for i in self.skills])]))
+        print("Attributes:")
+        for a, b in zip([i for i in self.attributes.keys()], [self.attributes[i].value for i in self.attributes]):
+            print(f"           {b} {a}")
+        # print(", ".join([f"{a}: {b}" for a, b in zip([i for i in self.attributes.keys()], [self.attributes[i].value for i in self.attributes])]))
+        print("    Skills:")
+        for a, b in zip([i for i in self.skills.keys()], [self.skills[i].rank for i in self.skills]):
+            print(f"           {b} {a}")
+        # print(", ".join([f"{a}: {b}" for a, b in zip([i for i in self.skills.keys()], [self.skills[i].rank for i in self.skills])]))
+        print(" Abilities:")
+        print(list(f"           {list(a.keys())[0]}" for a in self.abilities)[0])
 
 
 def gen_race(c: Character, race: str = None):
@@ -56,6 +74,15 @@ def gen_class(c: Character):
     c.char_class = cl
     # Lol
     c.char_class_extra = choice_class_exception_resolver(cl.name, c)
+    c.endurance = cl.endurance
+    c.health = cl.health
+    c.defenses = cl.defenses
+    for skill in c.skills.keys():
+        if skill in cl.skills.keys():
+            c.skills[skill] += cl.skills[skill]
+    if not isinstance(cl.resource, bool):
+        c.char_class_resource = cl.resource
+
 
 def gen_culture_background(c: Character):
     cul = choice(CULTURES)
