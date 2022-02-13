@@ -14,7 +14,7 @@ class Oblivion_Race:
         self.female_height = race_data['Female']['Height']
         self.female_weight = race_data['Female']['Weight']
         self.skills = race_data['Skills']
-        self.magicka_mult_bonus = race_data['Magicka Multiplier Bonus']
+        self.magicka_bonus = race_data['Magicka Bonus']
         if race_data['Resists']:
             self.resists = [race_data['Resists'][i] for i in race_data['Resists']]
         else:
