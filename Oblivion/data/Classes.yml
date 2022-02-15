@@ -1,84 +1,105 @@
 Acrobat:
+  name: Acrobat
   specialisation: Stealth
   attributes: [Agility, Endurance]
   skills: [Acrobatics, Blade, Block, Marksman, Security, Sneak, Speechcraft]
 Agent:
+  name: Agent
   specialisation: Stealth
   attributes: [Agility, Personality]
   skills: [Acrobatics, Illusion, Marksman, Mercantile, Security, Sneak, Speechcraft]
 Archer:
+  name: Archer
   specialisation: Combat
   attributes: [Agility, Strength]
   skills: [Armorer, Blade, Blunt, Hand to Hand, Light Armor, Marksman, Sneak]
 Assassin:
+  name: Assassin
   specialisation: Stealth
   attributes: [Intelligence, Speed]
   skills: [Acrobatics, Alchemy, Blade, Light Armor, Marksman, Security, Sneak]
 Barbarian:
+  name: Barbarian
   specialisation: Combat
   attributes: [Speed, Strength]
   skills: [Armorer, Athletics, Blade, Block, Blunt, Hand to Hand, Light Armor]
 Bard:
+  name: Bard
   specialisation: Stealth
   attributes: [Intelligence, Personality]
   skills: [Alchemy, Blade, Block, Illusion, Light Armor, Mercantile, Speechcraft]
 Battlemage:
+  name: Battlemage
   specialisation: Magic
   attributes: [Intelligence, Strength]
   skills: [Alchemy, Alteration, Blade, Blunt, Conjuration, Destruction, Mysticism]
 Crusader:
+  name: Crusader
   specialisation: Combat
   attributes: [Strength, Willpower]
   skills: [Athletics, Blade, Blunt, Destruction, Hand to Hand, Heavy Armor, Restoration]
 Healer:
+  name: Healer
   specialisation: Magic
   attributes: [Personality, Willpower]
   skills: [Alchemy, Alteration, Destruction, Illusion, Mercantile, Restoration, Speechcraft]
 Knight:
+  name: Knight
   specialisation: Combat
   attributes: [Personality, Strength]
   skills: [Blade, Block, Blunt, Hand to Hand, Heavy Armor, Illusion, Speechcraft]
 Mage:
+  name: Mage
   specialisation: Magic
   attributes: [Intelligence, Willpower]
   skills: [Alchemy, Alteration, Conjuration, Destruction, Illusion, Mysticism, Restoration]
 Monk:
+  name: Monk
   specialisation: Stealth
   attributes: [Agility, Willpower]
   skills: [Acrobatics, Alteration, Athletics, Hand to Hand, Marksman, Security, Sneak]
 Nightblade:
+  name: Nightblade
   specialisation: Magic
   attributes: [Speed, Willpower]
   skills: [Acrobatics, Alteration, Blade, Destruction, Light Armor, Restoration]
 Pilgrim:
+  name: Pilgrim
   specialisation: Stealth
   attributes: [Endurance, Personality]
   skills: [Armorer, Block, Blunt, Light Armor, Mercantile, Security, Speechcraft]
 Rogue:
+  name: Rogue
   specialisation: Combat
   attributes: [Personality, Speed]
   skills: [Alchemy, Athletics, Blade, Block, Illusion, Light Armor, Mercantile]
 Scout:
+  name: Scout
   specialisation: Combat
   attributes: [Endurance, Speed]
   skills: [Acrobatics, Alchemy, Armorer, Athletics, Blade, Block, Light Armor]
 Sorcerer:
+  name: Sorcerer
   specialisation: Magic
   attributes: [Endurance, Intelligence]
   skills: [Alchemy, Alteration, Conjuration, Destruction, Heavy Armor, Mysticism, Restoration]
 Spellsword:
+  name: Spellsword
   specialisation: Magic
   attributes: [Endurance, Willpower]
   skills: [Alteration, Blade, Block, Heavy Armor, Destruction, Illusion, Restoration]
 Thief:
+  name: Thief
   specialisation: Stealth
   attributes: [Agility, Speed]
   skills: [Acrobatics, Light Armor, Marksman, Mercantile, Security, Sneak, Speechcraft]
 Warrior:
+  name: Warrior
   specialisation: Combat
   attributes: [Endurance, Strength]
   skills: [Armorer, Athletics, Blade, Block, Blunt, Hand to Hand, Heavy Armor]
 Witchhunter:
+  name: Witchhunter
   specialisation: Magic
   attributes: [Agility, Intelligence]
   skills: [Alchemy, Athletics, Conjuration, Destruction, Marksman, Mysticism, Security]
