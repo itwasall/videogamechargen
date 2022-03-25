@@ -3,6 +3,9 @@
 
 from yaml import safe_load
 from random import choice
+from time import perf_counter
+
+script_start = perf_counter()
 
 data_dex = safe_load(open('Pokemon/pokedex.yml', 'rt'))
 
@@ -12,18 +15,18 @@ dex_all_compressed = {}
 for idx, dex_entry_name in enumerate(data_dex):
     dex_entry = data_dex[dex_entry_name]
     dex_all[idx] = dex_entry
+    if dex_entry["num"] in dex_all_compressed:
+        entries = len(dex_all_compressed[dex_entry["num"]])
+        dex_all_compressed[dex_entry["num"]][dex_entry["name"].split("-")[1]] = dex_entry
+    else:
+        dex_all_compressed[dex_entry["num"]] = {}
+        dex_all_compressed[dex_entry["num"]][dex_entry["name"]] = dex_entry
     if dex_entry["num"] in dex_no_special:
         continue
     else:
         dex_no_special[dex_entry["num"]] = dex_entry 
-    if dex_entry["num"] in dex_all_compressed:
-        entries = len(dex_all_compressed[dex_entry["num"]])
-        dex_all_compressed[dex_entry["num"]][entries + 1] = dex_entry
-    else:
-        dex_all_compressed[dex_entry["num"]] = {}
-        dex_all_compressed[dex_entry["num"]][0] = dex_entry
 
-def pick_monster(dex_list):
+def pick_dex(dex_list):
     match dex_list:
         case "no-special":
             return choice(dex_no_special)
@@ -38,18 +41,39 @@ def pick_monster(dex_list):
         case _:
             raise ValueError
 
-def demo_pick_monster():
-    monster_no_special = pick_monster("no-special")
-    monster_all = pick_monster("all")
-    # monster_all_compressed = pick_monster("all-compressed")
-    monster_all_compressed = None
-    return monster_no_special, monster_all, monster_all_compressed
+def demo_pick_dex():
+    dex_no_special = pick_dex("no-special")
+    dex_all = pick_dex("all")
+    # dex_all_compressed = pick_dex("all-compressed")
+    dex_all_compressed = None
+    return dex_no_special, dex_all, dex_all_compressed
 
-for i in range(10):
-    print("\nnewrun")
-    a, b, c = demo_pick_monster()
-    print(a["name"])
-    print(b["name"])
-    # print(c["name"])
+dex_just_special = {}
+dex_no_special_names = [dex_no_special[mon]['name'] for mon in dex_no_special]
+for dex_key in dex_all:
+    if dex_all[dex_key]['name'] not in dex_no_special_names:
+        dex_just_special[dex_key] = dex_all[dex_key]
+    else:
+        continue
 
+print(len(dex_just_special))
+
+files = {"Pokemon/dex_all.yml": dex_all,
+         "Pokemon/dex_no_special.yml": dex_no_special,
+         "Pokemon/dex_just_special.yml": dex_just_special,
+         "Pokemon/dex_all_compressed.yml": dex_all_compressed,
+         "Pokemon/dex_gmax.yml": {k:d for k, d in dex_just_special.items() if dex_just_special[k]['name'].endswith('-Gmax')},
+         "Pokemon/dex_mega.yml": {k:d for k, d in dex_just_special.items() if dex_just_special[k]['name'].endswith('-Mega')},
+         }
+
+for filename in files:
+    with open(filename, "w+") as output:
+        data_to_output = files[filename]
+        print(f"writing {filename}")
+        for k, d in data_to_output.items():
+            output.write(f"{k+1}: {data_to_output[k]}\n")
+
+script_end = perf_counter()
+
+print(f"exec time: {script_end - script_start:0.2f}")
 
