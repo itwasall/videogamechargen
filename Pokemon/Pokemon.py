@@ -25,21 +25,27 @@ class Pkmn:
         print(self.ev)
 
 def gen_iv(p: Pkmn, gifted = 0):
+    """
+    'gifted' refers to the IV distribution of a Pokemon.
+    If 0, then IV's are randomly assigned
+    If 1, then IV's are all 31
+    If 2, then a roll is made to see if the IV for Sp. Atk is 31,
+        if the roll is True then Atk's IV will be 0, the rest 31,
+        otherwise all IV's are 31, the same result as gifted = 1.
+      This is done to minimise confusion damage taken from Pokemon that only
+        uses special attacks. Since their Atk stat isn't being used for combat,
+        it is therefore ideal to have ATK be as low as possible, as damage taken
+        due to confusion is always calculated off ATK.
+    """
     match gifted:
         case 0:
             for k in p.iv.keys():
                 p.iv[k] = randint(1, 31)
         case 1:
-            # A "gifted" argument value of 1 makes all of a pokemons IVs equal to 31
             for k in p.iv.keys():
                 p.iv[k] = 31
         case 2:
             spk_atk_boost = randint(0, 1)
-            # A "gifted" argument value of 2 does the same as 1, however if spk_atk_boost is 1,
-            #   then the IV of 'Atk' will be set to 0. This is beneficial in some competitive
-            #   scenarios as damaged inflicted via confusion is calculated using the 'Atk' stat,
-            #   so a pokemon specialising in 'Sp. Atk' moves would ideally want to keep 'Atk' as 
-            #   low as possible, as otherwise the 'Atk' isn't used.
             if spk_atk_boost:
                 for k in p.iv.keys():
                     if k != 'Atk':
@@ -50,8 +56,6 @@ def gen_iv(p: Pkmn, gifted = 0):
                     p.iv[k] = 31
 
 
-
-
 def gen_ev(p: Pkmn, min_max = True, smart = True):
     """
     Following gen 8 logic, it is possible to max a pokemons EVs at level one.
@@ -59,6 +63,12 @@ def gen_ev(p: Pkmn, min_max = True, smart = True):
         these EV-boosting poke jobs reward EVs in place of Exp, it's possible,
         through technically grueling, for a pokemon to achieve max EVs before
         attaining level 2
+    A pokemon's total EVs max out at 510, and a single stat maxes out at 252.
+        This allows for two stats to be fully maxed out, with 6 left over to
+        put into a teriary stat.
+    When the 'smart' argument is 'True', only one of the two attacking stats
+        will be chosen, should either be randomly selected first.
+        If 'Atk' is rolled first, then 'Sp. Atk' won't be chosen, and visa versa.
     """
     if not min_max:
         total_evs = randint(0, 510) # Max number of evs possible
