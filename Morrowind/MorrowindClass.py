@@ -1,6 +1,11 @@
 from yaml import safe_load
+from os import getcwd
 
-class_data = safe_load(open('Morrowind/data/Classes.yml', 'rt'))
+try:
+    class_data = safe_load(open('Morrowind/data/Classes.yml', 'rt'))
+except FileNotFoundError:
+    class_data = safe_load(open(f'{getcwd()}\\data\\Classes.yml', 'rt'))
+
 
 class MW_Class:
     def __init__(self, name, class_data):

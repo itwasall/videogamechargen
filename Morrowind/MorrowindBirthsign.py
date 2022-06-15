@@ -1,6 +1,11 @@
 from yaml import safe_load
+from os import getcwd
 
-bs_data = safe_load(open('Morrowind/data/Birthsigns.yml', 'rt'))
+try:
+    bs_data = safe_load(open('Morrowind/data/Birthsigns.yml', 'rt'))
+except FileNotFoundError:
+    bs_data = safe_load(open(f'{getcwd()}\\data\\Birthsigns.yml','rt'))
+
 
 def birthsign_param_resolver(birth):
     effects = {}

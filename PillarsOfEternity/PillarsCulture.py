@@ -1,6 +1,10 @@
 from yaml import safe_load
+from os import getcwd
 
-cu_bg_data = safe_load(open('PillarsOfEternity/data/CultureBackground.yml', 'rt'))
+try:
+    cu_bg_data = safe_load(open('PillarsOfEternity/data/CultureBackground.yml', 'rt'))
+except FileNotFoundError:
+    cu_bg_data = safe_load(open(f'{getcwd()}/data/CultureBackground.yml', 'rt'))
 
 cu_data = cu_bg_data['culture']
 bg_data = cu_bg_data['background']

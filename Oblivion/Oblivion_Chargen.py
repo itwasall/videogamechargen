@@ -35,4 +35,6 @@ jerry = Character('Jerry')
 get_class(jerry)
 
 print(jerry.char_class)
-print(jerry.skills.list)
+for i in jerry.skills.list:
+    if i.value != 0:
+        print(i)

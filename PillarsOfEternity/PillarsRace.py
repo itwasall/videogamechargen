@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from yaml import safe_load
+from os import getcwd
 
-r_data = safe_load(open('PillarsOfEternity/data/Race.yml', 'rt'))
-a_data = safe_load(open('PillarsOfEternity/data/Abilities.yml', 'rt'))
+try:
+    r_data = safe_load(open('/PillarsOfEternity/data/Race.yml', 'rt'))
+    a_data = safe_load(open('./PillarsOfEternity/data/Abilities.yml', 'rt'))
+except FileNotFoundError:
+    r_data = safe_load(open(f'{getcwd()}/data/Race.yml', 'rt'))
+    a_data = safe_load(open(f'{getcwd()}/data/Abilities.yml', 'rt'))
 
 class Pillars_Race:
     def __init__(self, name, race_data = None, attribute_bonus = None):

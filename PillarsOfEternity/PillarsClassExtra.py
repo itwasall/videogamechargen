@@ -1,9 +1,14 @@
 from dis import dis
 from numpy import isin
 from yaml import safe_load
+from os import getcwd
 
-ab_data = safe_load(open('PillarsOfEternity/data/Abilities.yml', 'rt'))
-ef_data = safe_load(open('PillarsOfEternity/data/EffectNames.yml', 'rt'))
+try:
+    ab_data = safe_load(open('PillarsOfEternity/data/Abilities.yml', 'rt'))
+    ef_data = safe_load(open('PillarsOfEternity/data/EffectNames.yml', 'rt'))
+except FileNotFoundError:
+    ab_data = safe_load(open(f'{getcwd()}/data/Abilities.yml', 'rt'))
+    ef_data = safe_load(open(f'{getcwd()}/data/EffectNames.yml', 'rt'))
 
 class Pillars_ClassExtra:
     def __init__(self, name, effect=None):

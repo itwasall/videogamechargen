@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from yaml import safe_load
+from os import getcwd
 
-race_data = safe_load(open('Oblivion/data/Race.yml', 'rt'))
+try:
+    race_data = safe_load(open('Oblivion/data/Race.yml', 'rt'))
+except FileNotFoundError:
+    race_data = safe_load(open(f'{getcwd()}\\data\\Race.yml','rt'))
 
 class Oblivion_Race:
     def __init__(self, race_name, race_data):

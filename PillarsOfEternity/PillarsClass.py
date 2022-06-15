@@ -2,11 +2,16 @@
 # -*- coding: utf-8 -*-
 from yaml import safe_load
 from random import choice
+from os import getcwd
 
 import PillarsClassExtra as PiCE
 
-data = safe_load(open('PillarsOfEternity/data/Class.yml', 'rt'))
-c_data = data['classes']
+try:
+    data = safe_load(open('./PillarsOfEternity/data/Class.yml', 'rt'))
+    c_data = data['classes']
+except FileNotFoundError:
+    data = safe_load(open(f'{getcwd()}/data/Class.yml', 'rt'))
+    c_data = data['classes']
 
 class Pillars_Class:
     def __init__(self, name, data):
