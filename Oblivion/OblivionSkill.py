@@ -42,44 +42,34 @@ class Oblivion_Skill_List:
         #   will be taken
         return "Use <character>.skills.list"
 
-s = 'Combat'
 # Strength
-a = 'Stregnth'
-OblSkill_Blade = Oblivion_Skill('Blade', a, s)
-OblSkill_Blunt = Oblivion_Skill('Blunt', a, s)
-OblSkill_HandtoHand = Oblivion_Skill('Hand to Hand', a, s)
+OblSkill_Blade = Oblivion_Skill('Blade', 'Stregnth','Combat')
+OblSkill_Blunt = Oblivion_Skill('Blunt', 'Stregnth', 'Combat')
+OblSkill_HandtoHand = Oblivion_Skill('Hand to Hand', 'Stregnth','Combat')
 # Endurance
-a = 'Endurance'
-OblSkill_Armorer = Oblivion_Skill('Armorer', a, s)
-OblSkill_Block = Oblivion_Skill('Block', a, s)
-OblSkill_HeavyArmor = Oblivion_Skill('Heavy Armor', a, s)
+OblSkill_Armorer = Oblivion_Skill('Armorer', 'Endurance', 'Combat')
+OblSkill_Block = Oblivion_Skill('Block', 'Endurance','Combat')
+OblSkill_HeavyArmor = Oblivion_Skill('Heavy Armor', 'Endurance','Combat')
 # Speed
-a = 'Speed'
-OblSkill_Athletics = Oblivion_Skill('Athletics', a, s)
-s = 'Stealth'
-OblSkill_Acrobatics = Oblivion_Skill('Acrobatics', a, s)
-OblSkill_LightArmor = Oblivion_Skill('Light Armor', a, s)
+OblSkill_Athletics = Oblivion_Skill('Athletics', 'Speed','Combat')
+OblSkill_Acrobatics = Oblivion_Skill('Acrobatics', 'Speed','Stealth')
+OblSkill_LightArmor = Oblivion_Skill('Light Armor', 'Speed','Stealth')
 # Agility
-a = 'agility'
-OblSkill_Security = Oblivion_Skill('Security', a, s)
-OblSkill_Sneak = Oblivion_Skill('Sneak', a, s)
-OblSkill_Marksman = Oblivion_Skill('Marksman', a, s)
+OblSkill_Security = Oblivion_Skill('Security', 'Agility','Stealth')
+OblSkill_Sneak = Oblivion_Skill('Sneak', 'Agility','Stealth')
+OblSkill_Marksman = Oblivion_Skill('Marksman', 'Agility','Stealth')
 # Personality
-a = 'Personality'
-OblSkill_Mercantile = Oblivion_Skill('Mercantile', a, s)
-OblSkill_Speechcraft = Oblivion_Skill('Speechcraft', a, s)
-s = 'Magic'
-OblSkill_Illusion = Oblivion_Skill('Illusion', a, s)
+OblSkill_Mercantile = Oblivion_Skill('Mercantile', 'Personality','Stealth')
+OblSkill_Speechcraft = Oblivion_Skill('Speechcraft', 'Personality','Stealth')
+OblSkill_Illusion = Oblivion_Skill('Illusion', 'Personality','Magic')
 # Intelligence
-a = 'Intelligence'
-OblSkill_Alchemy = Oblivion_Skill('Alchemy', a, s)
-OblSkill_Conjuration = Oblivion_Skill('Conjuration', a, s)
-OblSkill_Mysticism = Oblivion_Skill('Mysticism', a, s)
+OblSkill_Alchemy = Oblivion_Skill('Alchemy', 'Intelligence','Magic')
+OblSkill_Conjuration = Oblivion_Skill('Conjuration', 'Intelligence','Magic')
+OblSkill_Mysticism = Oblivion_Skill('Mysticism', 'Intelligence','Magic')
 # Willpower
-a = 'Willpower'
-OblSkill_Alteration = Oblivion_Skill('Alteration', a, s)
-OblSkill_Destruction = Oblivion_Skill('Destruction', a, s)
-OblSkill_Restoration = Oblivion_Skill('Restoration', a, s)
+OblSkill_Alteration = Oblivion_Skill('Alteration', 'Willpower','Magic')
+OblSkill_Destruction = Oblivion_Skill('Destruction', 'Willpower','Magic')
+OblSkill_Restoration = Oblivion_Skill('Restoration', 'Willpower','Magic')
 
 SKILLS = [OblSkill_Blade, OblSkill_Blunt, OblSkill_HandtoHand, OblSkill_Armorer,
           OblSkill_Block, OblSkill_HeavyArmor, OblSkill_Athletics, OblSkill_Acrobatics,
