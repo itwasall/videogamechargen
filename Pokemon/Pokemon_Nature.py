@@ -8,7 +8,7 @@ NATURES = [["Hardy", "Lonely", "Brave", "Adamant", "Naughty"],
            ["Modest", "Mild", "Quiet", "Bashful", "Rash"],
            ["Calm", "Gentle", "Sassy", "Careful", "Quirky"]]
 # Nature Stat Pattern. Fuck you, you come up with a better name
-NSP = ["Attack", "Defense", "Speed", "Special Attack", "Special Defence"]
+NPS = ["Attack", "Defense", "Speed", "Special Attack", "Special Defence"]
 
 
 class LevelingRate:
@@ -24,10 +24,10 @@ class Nature:
         self.bonus_stat = bonus_stat
         self.nerf_stat = nerf_stat
 
-NatHardy, NatLonely, NatBrave, NatAdamant, NatNaughty = [Nature(i, "Attack", NPS[it]) for it, i in LEVELING_RATES[0]]
-NatBold, NatDocile, NatRelaxed, NatImpish, NatLax = [Nature(i, "Defense", NPS[it]) for it, i in LEVELING_RATES[1]]
-NatTimid, NatHasty, NatSerious, NatJolly, NatNaive = [Nature(i, "Speed", NPS[it]) for it, i in LEVELING_RATES[2]]
-NatModest, NatMild, NatQuiet, NatBashful, NatRash = [Nature(i, "Special Attack", NPS[it]) for it, i in LEVELING_RATES[3]]
-NatCalm, NatGentle, NatSassy, NatCareful, NatQuirky = [Nature(i, "Special Defense", NPS[it]) for it, i in LEVELING_RATES[4]]
+NatHardy, NatLonely, NatBrave, NatAdamant, NatNaughty = [Nature(i, "Attack", NPS[it]) for it, i in enumerate(NATURES[0])]
+NatBold, NatDocile, NatRelaxed, NatImpish, NatLax = [Nature(i, "Defense", NPS[it]) for it, i in enumerate(NATURES[1])]
+NatTimid, NatHasty, NatSerious, NatJolly, NatNaive = [Nature(i, "Speed", NPS[it]) for it, i in enumerate(NATURES[2])]
+NatModest, NatMild, NatQuiet, NatBashful, NatRash = [Nature(i, "Special Attack", NPS[it]) for it, i in enumerate(NATURES[3])]
+NatCalm, NatGentle, NatSassy, NatCareful, NatQuirky = [Nature(i, "Special Defense", NPS[it]) for it, i in enumerate(NATURES[4])]
 
 
