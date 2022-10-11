@@ -4,9 +4,9 @@ from yaml import safe_load
 from os import getcwd
 
 try:
-    race_data = safe_load(open('Morrowind/data/Race.yml', 'rt'))
+    race_data = safe_load(open('./Morrowind/data/Race.yml', 'rt'))
 except FileNotFoundError:
-    race_data = safe_load(open(f'{getcwd()}\\data\\Race.yml', 'rt'))
+    race_data = safe_load(open(f'{getcwd()}/data/Race.yml', 'rt'))
 
 
 class MW_Race:
