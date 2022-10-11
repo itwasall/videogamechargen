@@ -39,4 +39,15 @@ MWRace_Orc = MW_Race('Ord', race_data['Orc'])
 MWRace_Redguard = MW_Race('Redguard', race_data['Redguard'])
 MWRace_WoodElf = MW_Race('Wood Elf', race_data['WoodElf'])
 
-MW_RACES = [MWRace_Argonian, MWRace_Breton, MWRace_DarkElf, MWRace_HighElf, MWRace_Imperial, MWRace_Khajiit, MWRace_Nord, MWRace_Orc, MWRace_Redguard, MWRace_WoodElf]
+MW_RACES = [
+    MWRace_Argonian,
+    MWRace_Breton,
+    MWRace_DarkElf,
+    MWRace_HighElf,
+    MWRace_Imperial,
+    MWRace_Khajiit,
+    MWRace_Nord,
+    MWRace_Orc,
+    MWRace_Redguard,
+    MWRace_WoodElf
+]

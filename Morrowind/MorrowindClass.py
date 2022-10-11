@@ -40,7 +40,26 @@ MWClass_Theif = MW_Class('Theif', class_data['Theif'])
 MWClass_Warrior = MW_Class('Warrior', class_data['Warrior'])
 MWClass_Witchhunter = MW_Class('Witchhunter', class_data['Witchhunter'])
 
-MW_CLASSES = [MWClass_Acrobat, MWClass_Agent, MWClass_Archer, MWClass_Assassin, MWClass_Barbarian, MWClass_Bard,
-              MWClass_Battlemage, MWClass_Crusader, MWClass_Healer, MWClass_Knight, MWClass_Mage, MWClass_Monk,
-              MWClass_Nightblade, MWClass_Pilgrim, MWClass_Rogue, MWClass_Scout, MWClass_Sorcerer, MWClass_Spellsword,
-              MWClass_Theif, MWClass_Warrior, MWClass_Witchhunter]
+MW_CLASSES = [
+    MWClass_Acrobat,
+    MWClass_Agent,
+    MWClass_Archer,
+    MWClass_Assassin,
+    MWClass_Barbarian,
+    MWClass_Bard,
+    MWClass_Battlemage,
+    MWClass_Crusader,
+    MWClass_Healer,
+    MWClass_Knight,
+    MWClass_Mage,
+    MWClass_Monk,
+    MWClass_Nightblade,
+    MWClass_Pilgrim,
+    MWClass_Rogue,
+    MWClass_Scout,
+    MWClass_Sorcerer,
+    MWClass_Spellsword,
+    MWClass_Theif,
+    MWClass_Warrior,
+    MWClass_Witchhunter
+]

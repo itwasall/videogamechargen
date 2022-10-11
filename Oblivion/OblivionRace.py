@@ -39,4 +39,15 @@ OblRace_Orc = Oblivion_Race('Ord', race_data['Orc'])
 OblRace_Redguard = Oblivion_Race('Redguard', race_data['Redguard'])
 OblRace_WoodElf = Oblivion_Race('Wood Elf', race_data['Bosmer'])
 
-OBL_RACES = [OblRace_Argonian, OblRace_Breton, OblRace_DarkElf, OblRace_HighElf, OblRace_Imperial, OblRace_Khajiit, OblRace_Nord, OblRace_Orc, OblRace_Redguard, OblRace_WoodElf]
+OBL_RACES = [
+    OblRace_Argonian,
+    OblRace_Breton,
+    OblRace_DarkElf,
+    OblRace_HighElf,
+    OblRace_Imperial,
+    OblRace_Khajiit,
+    OblRace_Nord,
+    OblRace_Orc,
+    OblRace_Redguard,
+    OblRace_WoodElf
+]

@@ -71,12 +71,29 @@ OblSkill_Alteration = Oblivion_Skill('Alteration', 'Willpower','Magic')
 OblSkill_Destruction = Oblivion_Skill('Destruction', 'Willpower','Magic')
 OblSkill_Restoration = Oblivion_Skill('Restoration', 'Willpower','Magic')
 
-SKILLS = [OblSkill_Blade, OblSkill_Blunt, OblSkill_HandtoHand, OblSkill_Armorer,
-          OblSkill_Block, OblSkill_HeavyArmor, OblSkill_Athletics, OblSkill_Acrobatics,
-          OblSkill_LightArmor, OblSkill_Security, OblSkill_Sneak, OblSkill_Marksman,
-          OblSkill_Mercantile, OblSkill_Speechcraft, OblSkill_Illusion, OblSkill_Alchemy,
-          OblSkill_Conjuration, OblSkill_Mysticism, OblSkill_Alteration,
-          OblSkill_Destruction, OblSkill_Restoration]
+SKILLS = [
+    OblSkill_Blade,
+    OblSkill_Blunt,
+    OblSkill_HandtoHand,
+    OblSkill_Armorer,
+    OblSkill_Block,
+    OblSkill_HeavyArmor,
+    OblSkill_Athletics,
+    OblSkill_Acrobatics,
+    OblSkill_LightArmor,
+    OblSkill_Security,
+    OblSkill_Sneak,
+    OblSkill_Marksman,
+    OblSkill_Mercantile,
+    OblSkill_Speechcraft,
+    OblSkill_Illusion,
+    OblSkill_Alchemy,
+    OblSkill_Conjuration,
+    OblSkill_Mysticism,
+    OblSkill_Alteration,
+    OblSkill_Destruction,
+    OblSkill_Restoration
+]
 
 OblSkill_SKILL_LIST = Oblivion_Skill_List(SKILLS)
 

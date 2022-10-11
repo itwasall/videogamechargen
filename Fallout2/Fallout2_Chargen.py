@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import random
 
 class Character:
     def __init__(self, name):
@@ -13,6 +14,7 @@ class Character:
             'Agility': 1,
             'Luck': 1
         }
+        self.roll_stats()
         self.derived_stats = self.get_derived()
         self.skills = self.get_skills()
 
@@ -76,5 +78,43 @@ class Character:
         for skill in self.skills:
             print(f"{skill}: {self.skills[skill]['value']}%")
 
+    def print_special(self):
+        for special in self.special.keys():
+            print(f"{special}: {self.special[special]}")
+
+    def roll_stats(self):
+        special_stat_selector = {idx:stat for idx, stat in enumerate(self.special.keys())}
+        special_stat_copy = {k:d for k,d in self.special.items()}
+        total_points = 40
+        while total_points != 0:
+            pass
+
+"""
+    def roll_stats(self):
+        special_stat_selector = {1: "Strength", 2: "Perception", 3: "Endurance", 4: "Charmisa", 5: "Intelligence", 6: "Agility", 7: "Luck"}
+        special_stats_rolled = []
+        total_available_points = 40
+        while total_available_points > 0:
+            stat_to_roll = random.choice(list(special_stat_selector.keys()))
+            if len(special_stats_rolled) == 7:
+                break
+            while stat_to_roll in special_stats_rolled:
+                stat_to_roll = random.choice(list(special_stat_selector.keys()))
+            special_stats_rolled.append(stat_to_roll)
+            int_stat = random.randint(1, 10)
+            while int_stat > total_available_points:
+                int_stat = random.randint(1, 10)
+            total_available_points -= int_stat
+            if total_available_points == 0:
+                pass
+            self.special[special_stat_selector[stat_to_roll]] = int_stat
+"""
+
+
+
+
+
 jerry = Character('Jerry')
+
 jerry.print_skills()
+jerry.print_special()

@@ -24,7 +24,7 @@ class Pkmn:
         print(self.iv)
         print(self.ev)
 
-def gen_iv(p: Pkmn, gifted = 0):
+def generate_iv(p: Pkmn, gifted = 0):
     """
     'gifted' refers to the IV distribution of a Pokemon.
     If 0, then IV's are randomly assigned
@@ -100,6 +100,6 @@ def gen_ev(p: Pkmn, min_max = True, smart = True):
             print("fuck if I know")
 
 P = Pkmn('test')
-gen_iv(P, 2)
+generate_iv(P, 2)
 gen_ev(P, True)
 P.pkmn_info()

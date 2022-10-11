@@ -38,8 +38,26 @@ OblClass_Thief = Oblivion_Class('Thief', class_data['Thief'])
 OblClass_Warrior = Oblivion_Class('Warrior', class_data['Warrior'])
 OblClass_Witchhunter = Oblivion_Class('Witchhunter', class_data['Witchhunter'])
 
-OBL_CLASSES = [OblClass_Acrobat, OblClass_Agent, OblClass_Archer, OblClass_Assassin, OblClass_Barbarian, OblClass_Bard,
-              OblClass_Battlemage, OblClass_Crusader, OblClass_Healer, OblClass_Knight, OblClass_Mage, OblClass_Monk,
-              OblClass_Nightblade, OblClass_Pilgrim, OblClass_Rogue, OblClass_Scout, OblClass_Sorcerer, OblClass_Spellsword,
-              OblClass_Thief, OblClass_Warrior, OblClass_Witchhunter]
-
+OBL_CLASSES = [
+    OblClass_Acrobat,
+    OblClass_Agent,
+    OblClass_Archer,
+    OblClass_Assassin,
+    OblClass_Barbarian,
+    OblClass_Bard,
+    OblClass_Battlemage,
+    OblClass_Crusader,
+    OblClass_Healer,
+    OblClass_Knight,
+    OblClass_Mage,
+    OblClass_Monk,
+    OblClass_Nightblade,
+    OblClass_Pilgrim,
+    OblClass_Rogue,
+    OblClass_Scout,
+    OblClass_Sorcerer,
+    OblClass_Spellsword,
+    OblClass_Thief,
+    OblClass_Warrior,
+    OblClass_Witchhunter
+]
